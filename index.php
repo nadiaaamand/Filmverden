@@ -23,6 +23,14 @@
 	 <?php 
 	include 'nav.php';
 ?>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="banner">
+		<img class="img-fluid" src="img/banner2.jpg" alt="bannerbillede">
+		</div>
+		
+		</div>
+	</div>
 	
 </body>
 </html>
