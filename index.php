@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 <meta charset="UTF-8">
 <title>Filmverden</title>
 	<!--Bootstrap stylesheet-->
