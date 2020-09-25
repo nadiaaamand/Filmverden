@@ -5,7 +5,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-link active" href="#">Om <span class="sr-only">(current)</span></a>
+      <a class="nav-link active" href="#">Om</a>
       <a class="nav-link" href="#">Blog</a>
       <a class="nav-link" href="#">Login</a>
     </div>
