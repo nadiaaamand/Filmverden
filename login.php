@@ -22,5 +22,27 @@
 <?php 
 	include 'nav.php';
 ?>
+	<div class="container">
+		<div class="row">
+		   <div class="col-lg-6 offset-lg-3 col-sm-12 mb-5 mt-4">
+			   <h1>Login</h1>
+	<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+		<small>Har du ikke en bruger kan du registrere dig <a href="tilmeld.php">her</a></small><br><br>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+	</div>
+	</div>
+		</div>
+	<?php 
+	include 'footer.php';
+?>
 </body>
 </html>

@@ -22,5 +22,35 @@
 <?php 
 	include 'nav.php';
 ?>
+	<div class="container">
+		<div class="row">
+		   <div class="col-lg-6 offset-lg-3 col-sm-12 mb-5 mt-4">
+			   <h1>Tilmeld</h1>
+	<form>
+  <div class="form-group">
+    <label for="navn">Navn</label>
+    <input type="name" name="name" class="form-control" id="navn">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+  </div>
+	<div class="form-group">
+    <label for="exampleInputPassword1">Bekræft Password</label>
+    <input type="password" name="confirmPassword" class="form-control" id="exampleInputPassword1">
+  </div>
+		<small>Har du allerede en konto? <a href="login.php">Login her</a>.</small><br><br>
+  <button type="submit" class="btn btn-primary">Tilmeld</button>
+</form>
+	</div>
+	</div>
+		</div>
+	<?php 
+	include 'footer.php';
+?>
 </body>
 </html>

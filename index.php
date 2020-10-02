@@ -28,6 +28,7 @@
 		<div class="banner mb-4">
 		<img class="img-fluid" src="img/banner2.jpg" alt="bannerbillede">
 			</div>
+		
 			<!--nyeste indlæg-->
 <div class="container">
 	<h2 class="text-center mb-4">Nyeste indlæg</h2>
