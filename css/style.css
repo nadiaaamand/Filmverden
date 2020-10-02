@@ -20,6 +20,10 @@ blog .carousel-indicators {
 background: #707070;
 }
 
+h1{
+	margin: 1em 0 0.5em
+}
+
 /*Footer styling*/
 
 footer {
