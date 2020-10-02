@@ -22,6 +22,65 @@
  <?php 
 	include 'nav.php';
 ?>
+	<div class="container">
+
+	<h1 class="text-center mb-4">Blog</h1>
+		<p class="text-center">Her kan du finde alle vores blogindlæg</p>
+	<!--Indlæg-->
+<div class="card mb-3">			
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/test.jpg" class="card-img" alt="test">
+    </div>
+    <div class="col-lg-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+      </div>
+    </div>
+	</div>
+		</div>
+	
+	<!--Indlæg 2-->
+	
+	<div class="card mb-3">			
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/test.jpg" class="card-img" alt="test">
+    </div>
+    <div class="col-lg-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+		
+	<!--Indlæg 3-->
+	
+	<div class="card mb-3">			
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/test.jpg" class="card-img" alt="test">
+    </div>
+    <div class="col-lg-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+	
+	
+ <?php 
+	include 'footer.php';
+?>
 
 </body>
 </html>
