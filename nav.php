@@ -14,6 +14,14 @@ $curpage = basename ($_SERVER['PHP_SELF']);
     <div class="navbar-nav ml-auto">
       <a class="nav-link" href="om.php" <?php if($curpage == 'om.php') {echo 'class="active"';}?>>Om</a>
       <a class="nav-link" href="blog.php" <?php if($curpage == 'blog.php') {echo 'class="active"';}?>>Blog</a>
+		<?php // Session id bliver her aktiveret så når brugeren er logget ind vil prodilsiden blive vist i menuen. endvidere vil siden ike være aktiv medmindre man er logget ind. 
+					if($_SESSION["id"]) { 
+					  echo '<a class="nav-link" href="profil.php"';
+						if($curpage == "profil.php") {
+						   echo ' class=" active"';
+				        } 
+					  echo '<a>Profil</a>';
+				 }?>
       <a class="nav-link" href="login.php" <?php if($curpage == 'login.php') {echo 'class="active"';}?>>Login</a>
     </div>
   </div>

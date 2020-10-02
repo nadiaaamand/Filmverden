@@ -25,15 +25,133 @@
 ?>
 	<div class="container-fluid">
 	<div class="row">
-		<div class="banner">
+		<div class="banner mb-4">
 		<img class="img-fluid" src="img/banner2.jpg" alt="bannerbillede">
-		</div>
-		
-		</div>
+			</div>
+			<!--nyeste indlæg-->
+<div class="container">
+	<h2 class="text-center mb-4">Nyeste indlæg</h2>
+	<!--Indlæg 1-->
+<div class="card mb-3">			
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/test.jpg" class="card-img" alt="test">
+    </div>
+    <div class="col-lg-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<!--Indlæg 2-->
+	
+	<div class="card mb-3">			
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="img/test.jpg" class="card-img" alt="test">
+    </div>
+    <div class="col-lg-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
 	</div>
-<footer>
+		<!-- Indlæg slut-->
+		
+		<!--Film features-->
 
+		<div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="blog carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+               					  <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+			</div>
+
+<footer class="container-fluid">
+<div class="row" style="height: 150px; background-color: #333">
+	hej
+	</div>
 </footer> 
+			
+		
+
 	
 </body>
 </html>
