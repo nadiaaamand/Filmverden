@@ -67,6 +67,7 @@
 		<!-- Indlæg slut-->
 		
 		<!--Film features-->
+		<!-- Source for image carousel: https://bootsnipp.com/snippets/exVWQ-->
 
 		<div class="container">
             <div class="row">
@@ -144,11 +145,9 @@
             </div>
 			</div>
 
-<footer class="container-fluid">
-<div class="row" style="height: 150px; background-color: #333">
-	hej
-	</div>
-</footer> 
+<?php 
+		include 'footer.php';
+		?>
 			
 		
 

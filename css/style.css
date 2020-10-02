@@ -19,3 +19,10 @@ blog .carousel-indicators {
 .blog .carousel-indicators .active {
 background: #707070;
 }
+
+/*Footer styling*/
+
+footer {
+	color: white;
+	font-size: 18px;
+}
