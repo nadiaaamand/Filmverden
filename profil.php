@@ -22,5 +22,9 @@
 <?php 
 	include 'nav.php';
 ?>
+	
+<?php 
+	require 'footer.php';
+?>
 </body>
 </html>
