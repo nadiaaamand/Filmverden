@@ -1,3 +1,7 @@
+<?php
+// Include config file
+require_once 'db-con.php';?>
+
 <!doctype html>
 <html lang="da">
 <head>

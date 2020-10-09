@@ -1,3 +1,7 @@
+<?php
+// Include database config file
+require_once 'db-con.php';?>
+
 <!doctype html>
 <html lang="da">
 <head>
@@ -19,6 +23,7 @@
 </head>
 
 <body>
+
 <?php 
 	include 'nav.php';
 ?>
