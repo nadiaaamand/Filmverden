@@ -2,13 +2,10 @@
 // Include config file
 require_once 'db-con.php';
 
-// Define variables and initialize with empty values
-$confirm_password = "";
-$name_err = $email_err = $password_err = $confirm_password_err = "";
-
+//Defining what variable belong to what name in the form.
 $name = $_POST["name"];
 $email = $_POST["email"];
-$password = $_POST["password"];
+$password = $_POST["pwd"];
 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -51,27 +48,18 @@ $uppercase = preg_match('@[A-Z]@', $password);
 $lowercase = preg_match('@[a-z]@', $password);
 	
     // Validate password
-    if(empty(trim($_POST['password']))){
+    if(empty(trim($_POST['pwd']))){
         $password_err = "Skriv venligst et password.";     
     } 
 		elseif(!$uppercase || !$lowercase || strlen($password) < 8) {
 		  $password_err = "Password bør indholde mindst 8 karaktere, 1 småt bogstav og 1 stort bogstav.";}
 		else{
-        $password = trim($_POST['password']);
+        $password = trim($_POST['pwd']);
     }
-    
-    // Validate confirm password
-    if(empty(trim($_POST["confirm_password"]))){
-        $confirm_password_err = 'Vær venlig at tjekke dine passwordfelter.'; 
-    } else{
-        $confirm_password = trim($_POST['confirm_password']);
-        if($password != $confirm_password){
-            $confirm_password_err = 'Password passer ikke sammen.';
-        }
-    }
+ 
     
     // Check input errors before inserting in database
-    if (empty($name_err) && empty($email_err) && empty($password_err) && empty($confirm_password_err)){
+    if (empty($name_err) && empty($email_err) && empty($password_err)){
         
         // Prepare an insert statement
         $sql = "INSERT INTO user (name, email, pwd) VALUES (?, ?, ?)";
@@ -135,25 +123,20 @@ $lowercase = preg_match('@[a-z]@', $password);
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
     <label for="navn">Navn</label>
-    <input type="name" name="name" class="form-control" value="<?php echo $name; ?>" id="navn">
+    <input type="name" name="name" class="form-control" value="<?php echo $name; ?>">
 	  <span class="help-block"><?php echo $name_err; ?></span>
   </div>
   <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
     <label for="exampleInputEmail1">Email</label>
-    <input type="email" name="email" class="form-control" value="<?php echo $name; ?>" id="exampleInputEmail1">
+    <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
 	  <span class="help-block"><?php echo $email_err; ?></span>
   </div>
   <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" name="password" class="form-control" value="<?php echo $password; ?>" id="exampleInputPassword1">
+    <input type="password" name="pwd" class="form-control" value="<?php echo $password; ?>">
 	  <span class="help-block"><?php echo $password_err; ?></span>
 		</div>
-							  
-	<div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-    <label for="exampleInputPassword2">Bekræft Password</label>
-    <input type="password" name="confirmPassword" class="form-control" value="<?php echo $confirm_password; ?>" id="exampleInputPassword1">
-	  <span class="help-block"><?php echo $confirm_password_err; ?></span>
-  </div>
+
 		<small>Har du allerede en konto? <a href="login.php">Login her</a>.</small><br><br>
   <button type="submit" class="btn btn-primary" value="Submit">Tilmeld</button>
 </form>
