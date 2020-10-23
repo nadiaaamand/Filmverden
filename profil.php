@@ -28,6 +28,59 @@ require_once 'db-con.php';?>
 	include 'nav.php';
 ?>
 	
+	<div class="container-fluid">
+		<div class="row">	
+			<div class="col-sm-12 col-lg-7 offset-lg-1">
+			<h1>Profil</h1>
+				
+	<?php 	
+			//Retrieve name from databse
+			//$iduser = $_SESSION["id"];
+			$sql = 'SELECT name FROM user WHERE iduser=1';
+			$stmt = $conn->prepare($sql);
+			//$stmt->bind_param('i', $iduser);
+			$stmt->execute();
+			$stmt->bind_result($name);
+			while ($stmt->fetch()){
+				echo '<h2>Hej ' . "<b>" . $name . "</b>" . "!</h2>"; 
+				echo '<p>Her kan du tilføje og ændre dit profilbillede. Endvidere kan du opdatere dit password og sidst men ikke mindst slette din profil, hvis det er det du ønsker. </p>';
+				}
+				?>
+				
+			
+				<?php
+			//Retrieve name and email from database
+			$sql = "SELECT img, name, email FROM user WHERE iduser=1";
+			$stmt = $conn->prepare($sql);
+			//$stmt->bind_param('i', $iduser);
+			$stmt->execute();
+			$stmt->bind_result($img, $name, $email);
+			while ($stmt->fetch()){
+				echo "<h3>Her kan du se din info </h3>" . '<br>';
+				echo "<img class='img-fluid pb-2' src=" . $img . " alt='Default image' width='200px'> <br>";
+				echo "<div class='pb-2'>Navn: " . '<b>' . $name . '</b>' . '</div>';
+				echo "<div class='pb-2'>Email: " . '<b>' . $email . '</b>' . '</div>';
+
+			}?>
+				<a href="rediger.php">Rediger</a>
+			</div>
+			<div class="col-sm-12 col-lg-3 offset-lg-1">
+			<!--Logout-->
+				<?php
+			//if (isset($_SESSION["id"])){
+				echo '<form class="pt-5" action="logud.php">
+						<button class="btn btn-primary">Log ud</button>
+						<p>Husk at logge ud når du er færdig!</p>
+						</form>';
+			//} 
+			
+			?>
+			</div>
+
+		</div>
+	
+	</div>
+	
 <?php 
 	require 'footer.php';
 ?>

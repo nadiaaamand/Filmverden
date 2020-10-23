@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         mysqli_stmt_close($stmt);
     } 
 	
-	//defining the check for uppercase and lowercase characters for password vertfication..
+	//defining the check for uppercase and lowercase characters for password vertfication.
 $uppercase = preg_match('@[A-Z]@', $password);
 $lowercase = preg_match('@[a-z]@', $password);
 	
@@ -52,7 +52,7 @@ $lowercase = preg_match('@[a-z]@', $password);
         $password_err = "Skriv venligst et password.";     
     } 
 		elseif(!$uppercase || !$lowercase || strlen($password) < 8) {
-		  $password_err = "Password bør indholde mindst 8 karaktere, 1 småt bogstav og 1 stort bogstav.";}
+		  $password_err = "Password bør indholde mindst 8 karakterer, 1 småt bogstav og 1 stort bogstav.";}
 		else{
         $password = trim($_POST['pwd']);
     }
