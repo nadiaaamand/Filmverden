@@ -6,7 +6,7 @@ $curpage = basename ($_SERVER['PHP_SELF']);
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.php">Navbar</a>
+  <a class="navbar-brand" href="index.php"><img src="img/logo.png" alt="logo af filmverden" width="150"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
