@@ -43,11 +43,11 @@
 </div>
 	
 	<!-- Media object -> Om forfatteren-->		
-<div class="container border border-light p-4 m-4">
+<div class="container border-top border-light p-4 m-4">
 	<div class="row">
-	<div class="col-lg-12">
+	<div class="col-lg-8 offset-2">
 	<div class="media">
-  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="align-self-start mr-3 rounded-circle" alt="...">
+  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="align-self-start mr-3 rounded-circle" alt="..." width="150">
   <div class="media-body">
 	  <div class="justify-content-between d-flex">
     <h5 class="mt-0">Om forfatteren</h5>
@@ -62,6 +62,8 @@
 	</div>
 	</div>
 	</div>
+			
+	<!--Kommentar-->
 		
 		</div>
 	</div>
