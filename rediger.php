@@ -31,38 +31,37 @@ require_once 'db-con.php';?>
 		<div class="row">	
 			<div class="col-sm-12 col-lg-10 offset-lg-1">
 			<h1>Rediger Profil</h1>
-				<!--Edit profile taken from https://bbbootstrap.com/snippets/bootstrap-edit-profile-form-84177583-->
-				<div class="container mt-5">
-    <div class="row">
-        <!--Billede til venstre-->
-		<div class="col-md-4 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-1" src="https://i.imgur.com/0eg0aG0.jpg" width="150"></div>
+<div class="col-lg-4 col-sm-12 border-right">
+	<img class="rounded-circle mt-1 " src="https://i.imgur.com/0eg0aG0.jpg" width="150">
+	<form action="update-image.php">
+	<div class="form-group">
+		<input type="file" class="form-control-file">
+		<button type="submit" class="btn btn-primary">Opdater</button>
+	</div>
+	</form>
+</div>
+				
+<div class="col-lg-8 col-sm-12">
+	<form method="post" action="update-name.php"> <!--Navn-->
+	<div class="form-group">
+		<input type="name" name="navn" placeholder="Navn" class="form-control">
+		<button type="submit" class="btn btn-primary">Opdater</button>
 		</div>
-		
-		<!--Info om person/rediger profil-->
-        <div class="col-md-8">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
-						<h6><a href="profil.php">Tilbage</a></h6>
-                    </div>
-                    <h6 class="text-right">Rediger profil</h6>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-md-6"><input type="text" class="form-control" placeholder="name" value="John"></div>
-					<div class="col-md-6"><input type="text" class="form-control" placeholder="Email" value="john_doe12@bbb.com"></div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-6"><input type="text" class="form-control" placeholder="Password" value=""></div>
-					<div class="col-md-6 text-right">
-					<button class="btn btn-danger profile-button" type="button">Slet</button>
-					<button class="btn btn-primary profile-button" type="button">Gem</button>
-				</div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+	</form> 
+	
+		<form method="post" action="update-email.php"> <!--E-mail-->
+	<div class="form-group">
+		<input type="email" name="email" placeholder="E-mail" class="form-control">
+		<button type="submit" class="btn btn-primary">Opdater</button>
+		</div>
+	</form>
+	
+		<form method="post" action="update-password.php"> <!--Password-->
+	<div class="form-group">
+		<input type="password" name="password" placeholder="Password" class="form-control">
+		<button type="submit" class="btn btn-primary">Opdater</button>
+		</div>
+	</form>
 </div>
 				
 				
