@@ -57,7 +57,7 @@ require_once 'db-con.php';?>
 			$stmt->bind_result($img, $name, $email);
 			while ($stmt->fetch()){
 				echo "<h3>Her kan du se din info </h3>" . '<br>';
-				echo "<img class='img-fluid pb-2' src=" . $img . " alt='Default image' width='200px'> <br>";
+				echo "<img class='img-fluid pb-2 rounded-circle' src=" . $img . " alt='Default image' width='150px'> <br>";
 				echo "<div class='pb-2'>Navn: " . '<b>' . $name . '</b>' . '</div>';
 				echo "<div class='pb-2'>Email: " . '<b>' . $email . '</b>' . '</div>';
 
