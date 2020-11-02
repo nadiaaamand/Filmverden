@@ -1,9 +1,53 @@
 <?php
 // Include database config file
 require_once 'db-con.php';
-
 ?>
+<?php //Password ændres her
 
+$password = $_POST['pwd']; //Connecting the form data with the update function
+
+// Processing form data when form is submitted
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+//defining the check for uppercase and lowercase characters for password vertfication.
+$uppercase = preg_match('@[A-Z]@', $password);
+$lowercase = preg_match('@[a-z]@', $password);
+	
+    // Validate password
+    if(empty(trim($_POST['pwd']))){
+        $password_err = "Skriv venligst et password.";     
+    } 
+		elseif(!$uppercase || !$lowercase || strlen($password) < 8) {
+		  $password_err = "Password bør indholde mindst 8 karakterer, 1 småt bogstav og 1 stort bogstav.";}
+		else{
+        $password = trim($_POST['pwd']);
+		}
+
+    // Check input errors before inserting in database
+ if (empty($password_err)){
+$sql = "UPDATE user SET pwd=? WHERE iduser=1";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param('s', $param_password);
+$param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+$stmt->execute();
+
+if ($stmt->affected_rows >0 ){
+	echo "<script type='text/javascript'>
+	alert('Dit password er blevet ændret');
+	window.location = 'rediger.php';
+	</script>";
+}
+else {
+	echo "<script type='text/javascript'>
+	alert('Der skete en fejl, prøv igen senere.');
+	window.location = 'rediger.php';
+	</script>";
+}
+	          }
+        }
+         
+        // Close statement
+        mysqli_stmt_close($stmt);?>
 
 <!doctype html>
 <html lang="da">
@@ -100,15 +144,15 @@ require_once 'db-con.php';
 
 	<!--PASSWORD UPDATING-->
 	
-		<form method="post" action="update-password.php" enctype="multipart/form-data"> <!--Password-->
-	<div class="form-group">
+		<form method="post" enctype="multipart/form-data"> <!--Password-->
+	<div class="form-group" <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
 		<input type="hidden" name="iduser" value='<?=$iduser?>'>
-		<input type="password" name="password" placeholder="Skriv nyt password" class="form-control" value="<?php $pwd ?>">
+		<input type="password" name="pwd" placeholder="Skriv nyt password" class="form-control" value="<?php echo $password; ?>">
+		<span class="help-block"><?php echo $password_err; ?></span>
 		<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>
 		</div>
 	</form>
 </div>
-				
 				
 			</div>
 		</div>

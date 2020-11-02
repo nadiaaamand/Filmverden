@@ -19,7 +19,7 @@ $uploadOk = false;
 
 }
 if($uploadOk){ 
-$sql = "UPDATE user SET img=? WHERE iduser=1";
+$sql = "UPDATE user SET img=? WHERE iduser=1"; //Her ændres bruger til når sessionen kommer på
 $stmt = $conn->prepare($sql);
 $stmt->bind_param('s', $param_img);
  // Set parameters
@@ -29,9 +29,15 @@ $stmt->execute();
 
   if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-              header("location: rediger.php");
+              	echo "<script type='text/javascript'>
+	alert('Dit billede er blevet ændret');
+	window.location = 'rediger.php';
+	</script>";
             } else{
-                echo "Beklager, der skete en fejl. Prøv igen senere.";
+	  echo "<script type='text/javascript'>
+	alert('Beklager, der skete en fejl. Prøv igen senere.');
+	window.location = 'rediger.php';
+	</script>";
             }
 }
 ?>
