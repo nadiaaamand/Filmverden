@@ -48,11 +48,11 @@ require_once 'db-con.php';
 			$stmt->bind_result($img);
 			while ($stmt->fetch()){
 				
-				echo '<form method="post" action="update-image.php">';
+				echo '<form method="post" action="update-image.php" enctype="multipart/form-data">';
 				echo '<div class="form-group text-center">';
 				echo '<img class="rounded-circle mt-1 " src="'.$img.'" width="150">';
 				echo '<input type="hidden" name="iduser" value="'.$iduser.'">';
-				echo '<input type="file" class="form-control-file center" value="'.$img.'">';
+				echo '<input type="file" class="form-control-file center" name="fileToUpload">';
 				echo '<button type="submit" class="btn btn-primary btn-sm mt-2 mb-4">Opdater</button>';
 				echo '</div>';
 				echo '</form>';
@@ -100,7 +100,7 @@ require_once 'db-con.php';
 
 	<!--PASSWORD UPDATING-->
 	
-		<form method="post" action="update-password.php"> <!--Password-->
+		<form method="post" action="update-password.php" enctype="multipart/form-data"> <!--Password-->
 	<div class="form-group">
 		<input type="hidden" name="iduser" value='<?=$iduser?>'>
 		<input type="password" name="password" placeholder="Skriv nyt password" class="form-control" value="<?php $pwd ?>">
