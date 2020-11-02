@@ -43,7 +43,7 @@ require_once 'db-con.php';?>
 			$stmt->bind_result($name);
 			while ($stmt->fetch()){
 				echo '<h2>Hej ' . "<b>" . $name . "</b>" . "!</h2>"; 
-				echo '<p>Her kan du tilføje og ændre dit profilbillede. Endvidere kan du opdatere dit password og sidst men ikke mindst slette din profil, hvis det er det du ønsker. </p>';
+				echo '<p>Her kan du se og ændre din info. </p>';
 				}
 				?>
 				
@@ -56,13 +56,13 @@ require_once 'db-con.php';?>
 			$stmt->execute();
 			$stmt->bind_result($img, $name, $email);
 			while ($stmt->fetch()){
-				echo "<h3>Her kan du se din info </h3>" . '<br>';
-				echo "<img class='img-fluid pb-2 rounded-circle' src=" . $img . " alt='Default image' width='150px'> <br>";
+				echo "<img class='img-fluid pb-2 rounded-circle' src=" . $img . " alt='Default image' width='150px'>";
 				echo "<div class='pb-2'>Navn: " . '<b>' . $name . '</b>' . '</div>';
 				echo "<div class='pb-2'>Email: " . '<b>' . $email . '</b>' . '</div>';
 
-			}?>
-				<a href="rediger.php">Rediger</a>
+			}
+				?>
+				<p class="mb-4"><a href="rediger.php">Rediger</a></p>
 			</div>
 			<div class="col-sm-12 col-lg-3 offset-lg-1">
 			<!--Logout-->
