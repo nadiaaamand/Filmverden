@@ -67,12 +67,12 @@
 			<hr>
 			
 	<!--Kommentar-->
-			<div class="col-lg-6 offset-lg-3 border p-4 mb-4">
+			<div class="col-lg-6 offset-lg-3 p-4 mb-4">
 			<!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
 			<?php if (isset($iduser)): ?>
 				<form class="clearfix" action="post_details.php" method="post" id="comment_form">
 					<textarea name="comment_text" id="comment_text" class="form-control"></textarea>
-					<button class="btn btn-primary btn-sm pull-right" id="submit_comment">Submit comment</button>
+					<button class="btn btn-primary btn-sm pull-right" id="submit_comment">Send kommentar</button>
 				</form>
 			<?php else: ?>
 				<div class="border-light">
