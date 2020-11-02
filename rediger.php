@@ -34,6 +34,7 @@ require_once 'db-con.php';
 		<div class="row">	
 			<div class="col-sm-12 col-lg-10 offset-lg-1">
 			<h1>Rediger Profil</h1>
+				<p><i class="fas fa-arrow-left mr-2"></i><a href="profil.php">Tilbage til profil</a></p>
 				
 <div class="col-lg-8 offset-lg-2 col-sm-12">
 	
