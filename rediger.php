@@ -1,6 +1,9 @@
 <?php
 // Include database config file
-require_once 'db-con.php';?>
+require_once 'db-con.php';
+
+?>
+
 
 <!doctype html>
 <html lang="da">
@@ -31,35 +34,76 @@ require_once 'db-con.php';?>
 		<div class="row">	
 			<div class="col-sm-12 col-lg-10 offset-lg-1">
 			<h1>Rediger Profil</h1>
-<div class="col-lg-4 col-sm-12 border-right">
-	<img class="rounded-circle mt-1 " src="https://i.imgur.com/0eg0aG0.jpg" width="150">
-	<form action="update-image.php">
-	<div class="form-group">
-		<input type="file" class="form-control-file">
-		<button type="submit" class="btn btn-primary">Opdater</button>
-	</div>
-	</form>
-</div>
 				
-<div class="col-lg-8 col-sm-12">
-	<form method="post" action="update-name.php"> <!--Navn-->
-	<div class="form-group">
-		<input type="name" name="navn" placeholder="Navn" class="form-control">
-		<button type="submit" class="btn btn-primary">Opdater</button>
-		</div>
-	</form> 
+<div class="col-lg-8 offset-lg-2 col-sm-12">
 	
-		<form method="post" action="update-email.php"> <!--E-mail-->
-	<div class="form-group">
-		<input type="email" name="email" placeholder="E-mail" class="form-control">
-		<button type="submit" class="btn btn-primary">Opdater</button>
-		</div>
-	</form>
+	<!--IMAGE FETCHING and UPDATING-->
+		       <?php
+			
+			$sql = "SELECT IMG FROM user WHERE iduser=1";
+			$stmt = $conn->prepare($sql);
+			//$stmt->bind_param('i', $bid);
+			$stmt->execute();
+			$stmt->bind_result($img);
+			while ($stmt->fetch()){
+				
+				echo '<form method="post" action="update-image.php">';
+				echo '<div class="form-group text-center">';
+				echo '<img class="rounded-circle mt-1 " src="'.$img.'" width="150">';
+				echo '<input type="hidden" name="iduser" value="'.$iduser.'">';
+				echo '<input type="file" class="form-control-file center" value="'.$img.'">';
+				echo '<button type="submit" class="btn btn-primary btn-sm mt-2 mb-4">Opdater</button>';
+				echo '</div>';
+				echo '</form>';
+					}
+				?>
+	
+	
+	<!--NAME FETCHING and UPDATING-->
+	       <?php
+			
+			$sql = "SELECT name FROM user WHERE iduser=1";
+			$stmt = $conn->prepare($sql);
+			//$stmt->bind_param('i', $bid);
+			$stmt->execute();
+			$stmt->bind_result($name);
+			while ($stmt->fetch()){
+				echo '<form method="post" action="update-name.php">';
+				echo '<div class="form-group">';
+				echo '<input type="hidden" name="iduser" value="'.$iduser.'">';
+				echo '<input type="name" name="name" class="form-control" value="'.$name.'">';
+				echo '<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>';
+				echo '</div>';
+				echo '</form>';
+					}
+				?>
+	
+	<!--EMAIL FETCHING and UPDATING-->
+		       <?php
+			
+			$sql = "SELECT email FROM user WHERE iduser=1";
+			$stmt = $conn->prepare($sql);
+			//$stmt->bind_param('i', $bid);
+			$stmt->execute();
+			$stmt->bind_result($email);
+			while ($stmt->fetch()){
+				echo '<form method="post" action="update-email.php">';
+				echo '<div class="form-group">';
+				echo '<input type="hidden" name="iduser" value="'.$iduser.'">';
+				echo '<input type="email" name="email" class="form-control" value="'.$email.'">';
+				echo '<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>';
+				echo '</div>';
+				echo '</form>';
+					}
+				?>
+
+	<!--PASSWORD UPDATING-->
 	
 		<form method="post" action="update-password.php"> <!--Password-->
 	<div class="form-group">
-		<input type="password" name="password" placeholder="Password" class="form-control">
-		<button type="submit" class="btn btn-primary">Opdater</button>
+		<input type="hidden" name="iduser" value='<?=$iduser?>'>
+		<input type="password" name="password" placeholder="Skriv nyt password" class="form-control" value="<?php $pwd ?>">
+		<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>
 		</div>
 	</form>
 </div>
