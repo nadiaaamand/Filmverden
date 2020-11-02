@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 <meta charset="UTF-8">
 <!--Bootstrap stylesheet-->
+	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	
 	<!--Stylesheet-->
@@ -41,9 +42,10 @@
 			</div>
 			
 </div>
+			<hr>
 	
 	<!-- Media object -> Om forfatteren-->		
-<div class="container border-top border-light p-4 m-4">
+<div class="container p-4 m-4">
 	<div class="row">
 	<div class="col-lg-8 offset-2">
 	<div class="media">
@@ -62,8 +64,70 @@
 	</div>
 	</div>
 	</div>
+			<hr>
 			
 	<!--Kommentar-->
+			<div class="col-lg-6 offset-lg-3 border p-4 mb-4">
+			<!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
+			<?php if (isset($iduser)): ?>
+				<form class="clearfix" action="post_details.php" method="post" id="comment_form">
+					<textarea name="comment_text" id="comment_text" class="form-control"></textarea>
+					<button class="btn btn-primary btn-sm pull-right" id="submit_comment">Submit comment</button>
+				</form>
+			<?php else: ?>
+				<div class="border-light">
+					<h4 class="text-center pb-4"><a href="login.php">Login</a> for at kommentere på indlægget</h4>
+				</div>
+			<?php endif ?>
+			<!-- Display total number of comments on this post  -->
+			<h5><span id="comments_count"><?php echo count($comments) ?></span> Kommentar(er)</h5>
+			<hr>
+			<!-- comments wrapper -->
+			<div id="comments-wrapper">
+			<?php if (isset($comments)): ?>
+				<!-- Display comments -->
+				<?php foreach ($comments as $comment): ?>
+				<!-- comment -->
+				<div class="comment clearfix">
+					<img src="<?php $img ?>" alt="" class="profile_pic">
+					<div class="comment-details">
+						<span class="comment-name"><?php echo getUsernameById($comment['iduser']) ?></span>
+						<span class="comment-date"><?php echo date("F j, Y ", strtotime($comment["created_at"])); ?></span>
+						<p><?php echo $comment['body']; ?></p>
+						<a class="reply-btn" href="#" data-id="<?php echo $comment['id']; ?>">Kommenter</a>
+					</div>
+					<!-- reply form -->
+					<form action="post_details.php" class="reply_form clearfix" id="comment_reply_form_<?php echo $comment['id'] ?>" data-id="<?php echo $comment['id']; ?>">
+						<textarea class="form-control" name="reply_text" id="reply_text"></textarea>
+						<button class="btn btn-primary btn-xs pull-right submit-reply">Send kommantar</button>
+					</form>
+
+					<!-- GET ALL REPLIES -->
+					<?php $replies = getRepliesByCommentId($comment['id']) ?>
+					<div class="replies_wrapper_<?php echo $comment['id']; ?>">
+						<?php if (isset($replies)): ?>
+							<?php foreach ($replies as $reply): ?>
+								<!-- reply -->
+								<div class="comment reply clearfix">
+									<img src="<?php $img ?>" alt="" class="profile_pic">
+									<div class="comment-details">
+										<span class="comment-name"><?php echo getUsernameById($reply['iduser']) ?></span>
+										<span class="comment-date"><?php echo date("F j, Y ", strtotime($reply["created_at"])); ?></span>
+										<p><?php echo $reply['body']; ?></p>
+										<a class="reply-btn" href="#">reply</a>
+									</div>
+								</div>
+							<?php endforeach ?>
+						<?php endif ?>
+					</div>
+				</div>
+					<!-- // comment -->
+				<?php endforeach ?>
+			<?php else: ?>
+				<h6>Vær den første til at kommentere på indlægget</h6>
+			<?php endif ?>
+			</div><!-- comments wrapper -->
+		</div><!-- // all comments -->
 		
 		</div>
 	</div>
@@ -74,5 +138,11 @@
  <?php 
 	require 'footer.php';
 ?>
+	<!-- Javascripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap Javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 </html>
