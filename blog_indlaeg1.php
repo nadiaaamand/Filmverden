@@ -28,12 +28,14 @@
 		<div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
+	<!--Kilde: https://www.dfi.dk/viden-om-film/filmdatabasen/film/captain-america-first-avenger-->
 		<h1>CAPTAIN AMERICA: THE FIRST AVENGER</h1>
 <p>Joe Johnston, USA, 2011 124 min.U/Spillefilm</p>
 
 <p>Hans mod og hans vilje kan der ikke være nogen tvivl om, men den spinkle Steve Rogers bliver kasseret, da han melder sig frivilligt til hæren i 1941. Snart finder militæret imidlertid andet at bruge ham til. Den geniale Dr. Erskine er undsluppet fra nazisterne, og han har udviklet et eksperimentalt serum, der kan styrke et mands naturlige anlæg og forvandle ham til en supersoldat. Således forvandles Rogers til Captain America. Men inden Erskine undslap, var han blevet tvunget til at foretage et lignende eksperiment i Tyskland, på en langt mindre sympatisk kandidat.</p>
 			
-	<img class="img-fluid mb-2" src="img/test.jpg" alt="test">
+	<!--Kilde: pixabay-->
+	<img class="img-fluid mb-2" src="img/ca.png" alt="ca">
 
 		<h2>Grundoplysninger</h2> 
 <p>Original titel: Captain America: The First Avenger</p>
@@ -68,6 +70,9 @@
 
 <p>Aldersgrænse: Tilladt for børn fra 11 år </p>
 
+<!--Kilde: https://www.youtube.com/watch?v=8P-3KCeXpys&ab_channel=JoBloSuperheroes-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8P-3KCeXpys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
 		<h2>Credits</h2> 
 <h4>Selskaber</h4>
 <p>Produktionsselskab: Marvel Enterprises</p>

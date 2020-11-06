@@ -28,13 +28,15 @@
 		<div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
+	<!--Kilde: https://www.dfi.dk/viden-om-film/filmdatabasen/film/harry-potter-og-fonixordenen-->
 		<h1>HARRY POTTER OG FØNIXORDENEN</h1>
 <p>David Yates, Storbritanien, 2007 
 139 min.U/SpillefilmBørnefilm</p>
 
 <p>Allerede før semesterstart på Hogwarts, skolen for heksekunster og troldmandsskab, har Harry kæmpet mod Dementorer i Little Whinging. Da Harry har brugt magi foran en muggler, bliver han indkaldt til en høring i Ministeriet for Magi, der truer med at bortvise Harry fra skolen. Heldigvis hjælper Dumbledore Harry, og han får lov til at starte på skolen til det femte semester. Tilbage på skolen opdager Harry, at det ikke er alle, der tror på, at han kæmpede mod den onde Lord Voldemort; og da slet ikke, at Voldemort er tilbage.</p>
 			
-	<img class="img-fluid mb-2" src="img/test.jpg" alt="test">
+	<!--Kilde: unsplash-->
+	<img class="img-fluid mb-2" src="img/harrypotter.jpg" alt="harrypotter">
 
 		<h2>Grundoplysninger</h2> 
 <p>Original titel: Harry Potter and the Order of the Phoenix</p>
@@ -69,6 +71,9 @@
 
 <p>Aldersgrænse: Tilladt for børn fra 11 år </p>
 
+	<!--Kilde: https://www.youtube.com/watch?v=7pc-weXRrPY&ab_channel=harryXoXmeXoXpotter-->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7pc-weXRrPY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
 		<h2>Credits</h2> 
 <h4>Selskaber</h4>
 

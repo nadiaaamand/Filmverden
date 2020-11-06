@@ -28,13 +28,15 @@
 		<div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
+	<!--Kilde: https://www.dfi.dk/viden-om-film/filmdatabasen/film/kvinden-i-buret-->
 		<h1>KVINDEN I BURET</h1>
 <p>Mikkel Nørgaard, Danmark, 2013 
 100 min.DK/SpillefilmKrimi</p>
 
 <p>I "Kvinden i buret" møder vi for første gang den uortodokse og desillusionerede vicekriminalkommisær Carl Mørck. Han er én af Københavns Politis skarpeste hjerner, men han er samarbejdsvanskelig og er blevet stuvet af vejen i kælderen under Politigården. Her sættes han i spidsen for Afdeling Q, politiets nyoprettede afdeling for "sager under særlig bevågenhed". I virkeligheden skal han og hans nye makker Assad få tiden til at gå med katalogisere en række uopklarede gamle sager, men hurtigt kommer de på sporet af en sag, der trækker spor langt ind i toppen af dansk politik. Den fremadstormende unge danske folketingspolitiker Merete Lynggaard forsvandt sporløst fem år tidligere. Dengang blev det afskrevet som selvmord, men efterhånden som Carl Mørck og Assad får gravet sig ned i sagen, begynder den frygtelige sandhed at gå op for dem: De er kommet på sporet af en hensynsløs morder, som drevet af had har lagt en helt afsindig plan. Og det er kun et spørgsmål om tid før det er for sent! </p>
 			
-	<img class="img-fluid mb-2" src="img/test.jpg" alt="test">
+	<!--Kilde: unsplash-->
+	<img class="img-fluid mb-2" src="img/bur.jpg" alt="bur">
 
 		<h2>Grundoplysninger</h2> 
 <p>Original titel: Kvinden i buret	</p>
@@ -85,6 +87,9 @@
 
 <p>Aldersgrænse: Tilladt for børn fra 15 år</p>
 
+	<!--Kilde: https://www.youtube.com/watch?v=Wk87XFfLGXE&ab_channel=NordiskFilm-->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Wk87XFfLGXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
 		<h2>Credits</h2> 
 <h4>Selskaber</h4>
 <p>Produktionsselskab:	Zentropa Entertainments20</p>

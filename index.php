@@ -26,7 +26,7 @@
 	<div class="container-fluid">
 	<div class="row">
 		<div class="banner mb-4">
-		<img class="img-fluid" src="img/banner2.jpg" alt="bannerbillede">
+		<img class="img-fluid" src="img/pp.jpg" alt="bannerbillede">
 			</div>
 		
 			<!--nyeste indlæg-->
@@ -36,13 +36,13 @@
 <div class="card mb-3">			
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="img/test.jpg" class="card-img" alt="test">
+      <img src="img/ca1.png" class="card-img" alt="ca1">
     </div>
     <div class="col-lg-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+        <h5 class="card-title">CAPTAIN AMERICA: THE FIRST AVENGER</h5>
+        <p class="card-text">Hans mod og hans vilje kan der ikke være nogen tvivl om, men den spinkle Steve Rogers bliver kasseret, da han melder sig frivilligt til hæren i 1941. Snart finder militæret imidlertid andet at bruge ham til. Den geniale Dr. Erskine er undsluppet fra nazisterne, og han har udviklet et eksperimentalt serum, der kan styrke et mands naturlige anlæg og forvandle ham til en supersoldat. Således forvandles Rogers til Captain America...</p>
+		  <a href="blog_indlaeg1.php" class="btn btn-primary float-right">Læs mere</a>
       </div>
     </div>
   </div>
@@ -53,13 +53,13 @@
 	<div class="card mb-3">			
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="img/test.jpg" class="card-img" alt="test">
+      <img src="img/harrypotter.jpg" class="card-img" alt="harrypotter">
     </div>
     <div class="col-lg-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+        <h5 class="card-title">HARRY POTTER OG FØNIXORDENEN</h5>
+        <p class="card-text">Allerede før semesterstart på Hogwarts, skolen for heksekunster og troldmandsskab, har Harry kæmpet mod Dementorer i Little Whinging. Da Harry har brugt magi foran en muggler, bliver han indkaldt til en høring i Ministeriet for Magi, der truer med at bortvise Harry fra skolen. Heldigvis hjælper Dumbledore Harry, og han får lov til at starte på skolen til det femte semester...</p>
+		  <a href="blog_indlaeg2.php" class="btn btn-primary float-right">Læs mere</a>
       </div>
     </div>
   </div>
