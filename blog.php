@@ -34,9 +34,9 @@
     </div>
     <div class="col-lg-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+        <h5 class="card-title">CAPTAIN AMERICA: THE FIRST AVENGER</h5>
+        <p class="card-text">Hans mod og hans vilje kan der ikke være nogen tvivl om, men den spinkle Steve Rogers bliver kasseret, da han melder sig frivilligt til hæren i 1941. Snart finder militæret imidlertid andet at bruge ham til. Den geniale Dr. Erskine er undsluppet fra nazisterne, og han har udviklet et eksperimentalt serum, der kan styrke et mands naturlige anlæg og forvandle ham til en supersoldat. Således forvandles Rogers til Captain America...</p>
+		  <a href="blog_indlaeg1.php" class="btn btn-primary float-right">Go somewhere</a>
       </div>
     </div>
 	</div>
@@ -51,9 +51,9 @@
     </div>
     <div class="col-lg-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+        <h5 class="card-title">HARRY POTTER OG FØNIXORDENEN</h5>
+        <p class="card-text">Allerede før semesterstart på Hogwarts, skolen for heksekunster og troldmandsskab, har Harry kæmpet mod Dementorer i Little Whinging. Da Harry har brugt magi foran en muggler, bliver han indkaldt til en høring i Ministeriet for Magi, der truer med at bortvise Harry fra skolen. Heldigvis hjælper Dumbledore Harry, og han får lov til at starte på skolen til det femte semester...</p>
+		  <a href="blog_indlaeg2.php" class="btn btn-primary float-right">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -68,9 +68,9 @@
     </div>
     <div class="col-lg-8">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		  <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+        <h5 class="card-title">KVINDEN I BURET</h5>
+        <p class="card-text">I "Kvinden i buret" møder vi for første gang den uortodokse og desillusionerede vicekriminalkommisær Carl Mørck. Han er én af Københavns Politis skarpeste hjerner, men han er samarbejdsvanskelig og er blevet stuvet af vejen i kælderen under Politigården. Her sættes han i spidsen for Afdeling Q, politiets nyoprettede afdeling for "sager under særlig bevågenhed". I virkeligheden skal han og hans nye makker Assad få tiden til at gå med katalogisere en række uopklarede gamle sager, men hurtigt kommer de på sporet af en sag, der trækker spor langt ind i toppen af dansk politik...</p>
+		  <a href="blog_indlaeg3.php" class="btn btn-primary float-right">Go somewhere</a>
       </div>
     </div>
   </div>

@@ -28,81 +28,80 @@
 		<div class="container">
 	<div class="row">
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
-		<h1>CAPTAIN AMERICA: THE FIRST AVENGER</h1>
-<p>Joe Johnston, USA, 2011 124 min.U/Spillefilm</p>
+		<h1>HARRY POTTER OG FØNIXORDENEN</h1>
+<p>David Yates, Storbritanien, 2007 
+139 min.U/SpillefilmBørnefilm</p>
 
-<p>Hans mod og hans vilje kan der ikke være nogen tvivl om, men den spinkle Steve Rogers bliver kasseret, da han melder sig frivilligt til hæren i 1941. Snart finder militæret imidlertid andet at bruge ham til. Den geniale Dr. Erskine er undsluppet fra nazisterne, og han har udviklet et eksperimentalt serum, der kan styrke et mands naturlige anlæg og forvandle ham til en supersoldat. Således forvandles Rogers til Captain America. Men inden Erskine undslap, var han blevet tvunget til at foretage et lignende eksperiment i Tyskland, på en langt mindre sympatisk kandidat.</p>
+<p>Allerede før semesterstart på Hogwarts, skolen for heksekunster og troldmandsskab, har Harry kæmpet mod Dementorer i Little Whinging. Da Harry har brugt magi foran en muggler, bliver han indkaldt til en høring i Ministeriet for Magi, der truer med at bortvise Harry fra skolen. Heldigvis hjælper Dumbledore Harry, og han får lov til at starte på skolen til det femte semester. Tilbage på skolen opdager Harry, at det ikke er alle, der tror på, at han kæmpede mod den onde Lord Voldemort; og da slet ikke, at Voldemort er tilbage.</p>
 			
 	<img class="img-fluid mb-2" src="img/test.jpg" alt="test">
 
 		<h2>Grundoplysninger</h2> 
-<p>Original titel: Captain America: The First Avenger</p>
+<p>Original titel: Harry Potter and the Order of the Phoenix</p>
 
-<p>Dansk titel: Captain America: The First Avenger</p>
+<p>Dansk titel: Harry Potter og Fønixordenen</p>
 
-<p>Instruktør: Joe Johnston</p>
+<p>Instruktør: Harry Potter og Fønixordenen</p>
 
-<p>Manuskript: Christopher Markus, Stephen McFeely</p>
+<p>Manuskript: Michael Goldenberg</p>
 
-<p>Producer: Kevin Feige, Amir Madani</p>
+<p>Producer: David Heyman, David Barron</p>
 
-<p>Fotograf: Shelly Johnson</p>
+<p>Fotograf: Slawomir Idziak</p>
 
-<p>Klipper: Robert Dalva, Jeffrey Ford</p>
+<p>Klipper: Slawomir Idziak</p>
 
-<p>Komponist: Alan Menken, Alan Silvestri</p>
+<p>Komponist: Slawomir Idziak</p>
 
-<p>Scenograf: Rick Heinrichs</p>
+<p>Scenograf: Stuart Craig</p>
 
-<p>Medvirkende: Chris Evans, Hayley Atwell, Sebastian Stan</p>
+<p>Medvirkende:	Daniel Radcliffe, Rupert Grint, Emma Watson</p>
 
-<p>Produktionsland: USA</p>
+<p>Produktionsland:	Storbritanien, USA</p>
 
-<p>Produktionsselskab: Marvel Enterprises</p>
+<p>Produktionsselskab: Heyday Films</p>
 
-<p>Dansk distribution: United International Pictures</p>
+<p>Dansk distribution: Sandrew Metronome</p>
 
-<p>Dansk biografpremiere: 11.08.2011</p>
+<p>Dansk biografpremiere: 13.07.2007</p>
 
-<p>Premierebiografer: Palads, Imperial, Albertslund Biograferne, Gladsaxe Bio, Værløse Bio, BioCity (Tåstrup), Kastrup Bio, Birkerød Bio, Baltoppen Bio 1-2, CinemaxX, Empire, Kinopalæet (Lyngby), Falkoner samt 49 biografer i provinsen, inkl. Færøerne. I både 3D og 35 mm</p>
+<p>Premierebiografer: Palads, Imperial, Albertslund Biograferne, Gladsaxe Bio, BioCity (Tåstrup), Kastrup Bio, Baltoppen Bio 1-2, Gentofte Kino, Glostrup Bio, CinemaxX, Empire, Kinopalæet (Lyngby), Metropol, Falkoner, Vanløse Bio samt 63 biografer i provinsen, inkl. Færøerne og Grønland</p>
 
 <p>Aldersgrænse: Tilladt for børn fra 11 år </p>
 
 		<h2>Credits</h2> 
 <h4>Selskaber</h4>
-<p>Produktionsselskab: Marvel Enterprises</p>
-<p>Dansk distribution: United International Pictures</p>
 
+<p>Produktionsselskab: Heyday Films</p>
+<p>Finansiering: A Warner Bros. release of a Heyday Films production</p>
+<p>Dansk distribution: Sandrew Metronome</p>
 
 <h4>Instruktion</h4>
-<p>Instruktion: Joe Johnston</p>
+<p>Instruktion: David Yates</p>
 
 <h4>Manus</h4>
-<p>Manus: Christopher Markus og Stephen McFeely</p>
+<p>Manus: Michael Goldenberg</p>
 
 <h4>Produktion</h4>
-<p>Producer: Kevin Feige og Amir Madani</p>
+<p>Producer: David Heyman og David Barron</p>
 
 <h4>Foto</h4>
-<p>Foto: Shelly Johnson</p>
-
-<h4>Stills</h4>
-<p>Stills: Jay Maidment</p>
+<p>Foto: Slawomir Idziak</p>
 
 <h4>Klip</h4>
-<p>Klip: Robert Dalva og Jeffrey Ford</p>
+<p>Klip: Mark Day</p>
 
 <h4>Musik</h4>
-<p>Musik: Alan Menken og Alan Silvestri</p>
+<p>Musik: Nicholas Hooper</p>
 
 <h4>Produktionsdesign</h4>
-<p>Produktionsdesign: Rick Heinrichs</p>
+<p>Produktionsdesign: Stuart Craig</p>
 
 <h4>Medvirkende</h4>
-<p>Captain America/Steve Rogers: Chris Evans</p>
-<p>Peggy Carter: Hayley Atwell</p>
-<p>James Buchanan 'Bucky' Barnes: Sebastian Stan</p>	
-			
+<p>Harry Potter: Daniel Radcliffe</p>
+<p>Ron Weasley: Rupert Grint</p>
+<p>Hermione Granger: Emma Watson</p>	
+
 <p>Kilde: Det Danske Filminstitut </p> 			
 			</div>
 			
