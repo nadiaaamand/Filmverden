@@ -31,7 +31,7 @@
 
 <p>Vi håber at vi med dette forum kan give jer et sted hvor film, nye som gamle, kan give dig ny viden og ikke mindst et sted hvor man frit kan diskutere de emner der måtte komme op efter at have læst om produktionenforløbet af en film.</p>
 
-<p>Ønsker man at komme med forslag til film som vi skal skrive om eller har du feedback, så er man altid velkommen til at skrive til vores <a href="#">mail</a>.</p>
+<p>Ønsker man at komme med forslag til film som vi skal skrive om eller har du feedback, så er man altid velkommen til at skrive til vores <a href="mailto:nadiaaamand@gmail.com">mail</a>.</p>
 		</div>
 		</div>
 	</div>

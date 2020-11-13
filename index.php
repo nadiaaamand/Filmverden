@@ -26,7 +26,12 @@
 	<div class="container-fluid">
 	<div class="row">
 		<div class="banner mb-4">
-		<img class="img-fluid" src="img/pp.jpg" alt="bannerbillede">
+			<img class="img-fluid" src="img/pp.jpg" alt="banner">
+			<div class="banner-text">
+			<h1>
+			Vi bringer viden om film tættere på dig.
+			</h1>
+				</div>
 			</div>
 		
 			<!--nyeste indlæg-->
@@ -86,23 +91,23 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt8305852/?ref_=nv_sr_srsg_0&fbclid=IwAR00kt0tfQyW8JEHCdJ9_Fzb1lqKEH3mZZwgasD-dEBh7nQ6fQWYz14eOsw" target="_blank">
+                                            <img src="img/all-my-life.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.movieinsider.com/posters/567070?fbclid=IwAR2_Xqih2gqvMVEK941QuA6vRixmZ0mFN7HmyN_QivtcnCYhiwA3jfZjkj4" target="_blank">
+                                            <img src="img/barefoot.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt2850386/?ref_=nv_sr_srsg_0&fbclid=IwAR3ATFhfis__pbHZY5OtPtBPSvqe3je1UPxt5e-bG4kf0CVo7wpXQIeEDAs" target="_blank">
+                                            <img src="img/croods.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt10515926/?ref_=fn_al_tt_1&fbclid=IwAR12qWxfRei_3ffCtWhc4E5AAmd_kjyVq0varNS4Zr0RYnnCjN1ZONWvIGw" target="_blank">
+                                            <img src="img/half-brothers.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                 </div>
@@ -113,23 +118,23 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt10272386/?ref_=nv_sr_srsg_0&fbclid=IwAR1H6KFrWP9BVqz2DtP3zMq5haeqkVZM-P6-AUkpLsmoyCpkPmI-MuS9VMA" target="_blank">
+                                            <img src="img/the-father.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt6475714/?ref_=nv_sr_srsg_0&fbclid=IwAR2_Xqih2gqvMVEK941QuA6vRixmZ0mFN7HmyN_QivtcnCYhiwA3jfZjkj4" target="_blank">
+                                            <img src="img/monster-hunter.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt12592252/?ref_=fn_al_tt_1&fbclid=IwAR24qsqoL8Tk_fPidlX-PetX-swhQ2V9v4mJIAajDZDXI1gXon4zdDfWFg8" target="_blank">
+                                            <img src="img/songbird.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                     <div class="col-md-3">
-                                        <a href="#">
-               					  <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        <a href="https://www.imdb.com/title/tt6218010/?ref_=nv_sr_srsg_0&fbclid=IwAR2JqwuM2idsOt7fA7Yaxwlb8UYP_VH_wyfbvRXF973GAyCjhPvC_XEZm0U" target="_blank">
+               					  <img src="img/iron-mask.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
                                 </div>
