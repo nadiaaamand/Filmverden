@@ -1,5 +1,6 @@
 /* Scss Document */
 $primary-color: #edc149;
+$hover-color: #d4b86c;
 
 
 blog .carousel-indicators {
@@ -27,6 +28,26 @@ h1{
 
 .center{
 	margin-left: 30% !important;
+}
+
+a {
+	color:$primary-color;
+}
+
+a:hover{
+	color: $hover-color;
+	text-decoration: none;
+}
+
+.btn-primary{
+	background-color: $primary-color;
+	border-color: $primary-color;
+}
+
+.btn-primary:hover{
+	background-color: $hover-color;
+	border-color: $hover-color;
+	transition: 1s;
 }
 
 

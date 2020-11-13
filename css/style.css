@@ -20,6 +20,22 @@ h1 {
 .center {
   margin-left: 30% !important; }
 
+a {
+  color: #edc149; }
+
+a:hover {
+  color: #d4b86c;
+  text-decoration: none; }
+
+.btn-primary {
+  background-color: #edc149;
+  border-color: #edc149; }
+
+.btn-primary:hover {
+  background-color: #d4b86c;
+  border-color: #d4b86c;
+  transition: 1s; }
+
 /* Comment styling*/
 form button {
   margin: 5px 0px; }
