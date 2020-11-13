@@ -22,25 +22,19 @@
  <?php 
 	include 'nav.php';
 ?>
-	<div class="container">
+	<div class="container-fluid">
 	<div class="row">
+		<img class="img-fluid" src="img/film_banner_om.jpg" alt="bannerbillede af filmruller">
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
 		<h1>Om os</h1>
-<p>Praesent et laoreet lectus. Donec at sem eros. Vivamus id augue leo. Duis commodo nisi ut purus viverra, at tincidunt turpis tincidunt. Curabitur ultrices velit ante, ut faucibus felis placerat eu. Duis hendrerit cursus ornare. Pellentesque ullamcorper mollis ex non porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce leo sapien, fringilla eu turpis quis, laoreet dapibus sapien. Donec elit lacus, luctus vitae posuere at, vulputate quis lacus. Suspendisse potenti. Nullam ullamcorper tortor ac ex auctor, et pellentesque felis vehicula.</p>
+<p>Filmverden er en lille blog som sætter fokus på hele produktionen af en film. Som interesserede i filmverden og hvordan film produceres før, under og efter filmning har vi gjort det til vores opgave at lave et forum hvor den information kan blive delt og diskuteret. </p>
 
-<p>Integer odio dui, consequat sed nisi sagittis, egestas sodales ex. Fusce imperdiet turpis eget arcu maximus, sed euismod dolor dapibus. Vivamus vitae erat metus. Proin ex nunc, aliquet eu ex vitae, consectetur gravida massa. Curabitur eget rutrum orci. Sed sit amet nisl euismod, maximus odio non, varius felis. Nullam in tortor tristique, congue dolor vitae, sagittis ante. Phasellus congue eros non pulvinar lobortis.</p>
-			
-	<!--Kilde: unsplash-->
-	<img class="img-fluid mb-2" src="img/film.jpg" alt="film">
+<p>Vi håber at vi med dette forum kan give jer et sted hvor film, nye som gamle, kan give dig ny viden og ikke mindst et sted hvor man frit kan diskutere de emner der måtte komme op efter at have læst om produktionenforløbet af en film.</p>
 
-<p>Donec diam ante, porta at facilisis eget, fringilla sit amet lectus. Curabitur tellus nunc, semper sed auctor ut, sodales ut lectus. In rhoncus sed augue sed posuere. Proin pretium, est non feugiat vestibulum, orci mi dapibus ante, in luctus magna erat in risus. Aliquam gravida aliquam tincidunt. In hac habitasse platea dictumst. Duis at dictum urna, eu mollis nisi. Ut quis nulla ac erat tincidunt ullamcorper. Maecenas pulvinar consequat magna, at congue turpis ultricies eu. Vivamus vel odio in magna aliquam rutrum. Etiam ultricies a ipsum ac posuere. Vestibulum quis arcu sed lectus dapibus tempor. Ut vel vehicula ligula.</p>
-
-<p>Curabitur vehicula rutrum nulla volutpat fringilla. Sed et tortor dui. Praesent molestie ullamcorper ipsum. Morbi ut aliquam risus, quis dignissim nunc. Morbi ut fringilla turpis. Mauris aliquet feugiat tortor id venenatis. Suspendisse nec laoreet nisi. Nullam fringilla metus non lacus sodales, tempus interdum purus finibus. Aliquam finibus ex a mi efficitur, quis viverra nisl placerat. Quisque ut orci condimentum, sollicitudin purus eu, volutpat eros. Donec scelerisque, tellus vel mollis maximus, nisi est sollicitudin dolor, vel consequat lacus enim ac augue. Proin hendrerit tempor sapien id congue. Sed et mattis leo. Ut consequat vehicula molestie.</p>
+<p>Ønsker man at komme med forslag til film som vi skal skrive om eller har du feedback, så er man altid velkommen til at skrive til vores <a href="#">mail</a>.</p>
 		</div>
 		</div>
 	</div>
-	
-	
 	
 	
  <?php 
