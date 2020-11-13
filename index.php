@@ -36,7 +36,7 @@
 <div class="card mb-3">			
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="img/ca1.png" class="card-img" alt="ca1">
+      <img src="img/ca1.jpg" class="card-img" alt="ca1">
     </div>
     <div class="col-lg-8">
       <div class="card-body">
