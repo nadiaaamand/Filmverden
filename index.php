@@ -17,6 +17,9 @@
 	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
+	<!-- Font awesome icons-->
+	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
@@ -38,7 +41,7 @@
 <div class="container">
 	<h2 class="text-center mb-4">Nyeste indlæg</h2>
 	<!--Indlæg 1-->
-<div class="card mb-3">			
+<div class="card mb-3 bg-card">			
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="img/ca1.jpg" class="card-img" alt="ca1">
@@ -55,7 +58,7 @@
 	
 	<!--Indlæg 2-->
 	
-	<div class="card mb-3">			
+	<div class="card mb-3 bg-card">			
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="img/harrypotter.jpg" class="card-img" alt="harrypotter">
