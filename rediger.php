@@ -85,9 +85,9 @@ else {
 	<!--IMAGE FETCHING and UPDATING-->
 		       <?php
 			
-			$sql = "SELECT IMG FROM user WHERE iduser=1";
+			$sql = "SELECT IMG FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			//$stmt->bind_param('i', $bid);
+			$stmt->bind_param('i', $bid);
 			$stmt->execute();
 			$stmt->bind_result($img);
 			while ($stmt->fetch()){
@@ -107,9 +107,9 @@ else {
 	<!--NAME FETCHING and UPDATING-->
 	       <?php
 			
-			$sql = "SELECT name FROM user WHERE iduser=1";
+			$sql = "SELECT name FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			//$stmt->bind_param('i', $bid);
+			$stmt->bind_param('i', $bid);
 			$stmt->execute();
 			$stmt->bind_result($name);
 			while ($stmt->fetch()){
@@ -126,9 +126,9 @@ else {
 	<!--EMAIL FETCHING and UPDATING-->
 		       <?php
 			
-			$sql = "SELECT email FROM user WHERE iduser=1";
+			$sql = "SELECT email FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			//$stmt->bind_param('i', $bid);
+			$stmt->bind_param('i', $bid);
 			$stmt->execute();
 			$stmt->bind_result($email);
 			while ($stmt->fetch()){

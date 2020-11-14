@@ -1,7 +1,14 @@
 <?php
 // Include database config file
-require_once 'db-con.php';?>
-
+require_once 'db-con.php';
+// Initialize the session
+session_start();
+ 
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
+  header("location: login.php");
+  exit;}
+?>
 <!doctype html>
 <html lang="da">
 <head>
@@ -35,10 +42,10 @@ require_once 'db-con.php';?>
 				
 	<?php 	
 			//Retrieve name from databse
-			//$iduser = $_SESSION["id"];
-			$sql = 'SELECT name FROM user WHERE iduser=1';
+			$iduser = $_SESSION["id"];
+			$sql = 'SELECT name FROM user WHERE iduser=?';
 			$stmt = $conn->prepare($sql);
-			//$stmt->bind_param('i', $iduser);
+			$stmt->bind_param('i', $iduser);
 			$stmt->execute();
 			$stmt->bind_result($name);
 			while ($stmt->fetch()){
@@ -50,9 +57,9 @@ require_once 'db-con.php';?>
 			
 				<?php
 			//Retrieve name and email from database
-			$sql = "SELECT img, name, email FROM user WHERE iduser=1";
+			$sql = "SELECT img, name, email FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			//$stmt->bind_param('i', $iduser);
+			$stmt->bind_param('i', $iduser);
 			$stmt->execute();
 			$stmt->bind_result($img, $name, $email);
 			while ($stmt->fetch()){
