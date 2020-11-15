@@ -2,34 +2,79 @@
 // Include config file
 require_once 'db-con.php';
 
-$email = $_POST["email"];
-$password = $_POST["pwd"]; 
-
+// Define variables and initialize with empty values
+$email = $password = "";
+$email_err = $password_err = "";
+ 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-//Check that none of the fields were left empty
-if ($email==''|$password=='') {
-  $error = true;
-  $fill_error = "Please fill in all the fields";
-}
-//If all the fields were filled correctly process form data
-if (!$error) {
-  //check that the user is not already registered, checking by unique email
-  //remember to replace users_mwa18 with the name of the table you created
-  $querycheckexist= "SELECT * FROM users WHERE email = '" . $email. "' AND password = '" . sha1($password). "' ";
-    if(mysqli_query($con, $querycheckexist)) {
-      //echo "sucess";
-      $successmsg = "<p class='logged'>Welcome ".$email."<br> Du er nu logget ind</p>";
+ 
+    // Check if username is empty
+    if(empty(trim($_POST["email"]))){
+        $email_err = 'Skriv venligst din email.';
+    } else{
+        $email = trim($_POST["email"]);
     }
-    else {
-      $errormsg = "Forkert email eller password";
+    
+    // Check if password is empty
+    if(empty(trim($_POST['password']))){
+        $password_err = 'Skriv venligst dit password.';
+    } else{
+        $password = trim($_POST['password']);
     }
+    
+    // Validate credentials
+    if(empty($email_err) && empty($password_err)){
+        // Prepare a select statement
+        $sql = "SELECT email, pwd FROM user WHERE email = ?";
+        
+        if($stmt = mysqli_prepare($conn, $sql)){
+            // Bind variables to the prepared statement as parameters
+            mysqli_stmt_bind_param($stmt, "s", $param_email);
+            
+            // Set parameters
+            $param_email = $email;
+            
+            // Attempt to execute the prepared statement
+            if(mysqli_stmt_execute($stmt)){
+                // Store result
+                mysqli_stmt_store_result($stmt);
+                
+                // Check if email exists, if yes then verify password
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                    // Bind result variables
+					
+                    mysqli_stmt_bind_result($stmt, $email, $hashed_password=password_hash($password, PASSWORD_DEFAULT));
+                    if(mysqli_stmt_fetch($stmt)){
+                        if(password_verify($password, $hashed_password)){
+                            /* Password is correct, so start a new session and
+                            save the username to the session */
+                            session_start();
+                            $_SESSION['email'] = $email;      
+                            header("location: profil.php");
+                        } else{
+                            // Display an error message if password is not valid
+                            $password_err = 'Dit password er ikke rigtig, prøv igen.';
+                        }
+                    }
+                } else{
+                    // Display an error message if email doesn't exist
+                    $email_err = 'Ingen konto blev fundet med den email.';
+                }
+            } else{
+                echo "Hov! Noget gik galt, prøv igen senere.";
+            }
+        }
+        
+        // Close statement
+        mysqli_stmt_close($stmt);
+    }
+    
+    // Close connection
+    mysqli_close($conn);
 }
-else $errormsg = $fill_error;
-}
-
 ?>
+ 
 <!doctype html>
 <html lang="da">
 <head>
@@ -58,22 +103,20 @@ else $errormsg = $fill_error;
 		<div class="row">
 		   <div class="col-lg-6 offset-lg-3 col-sm-12 mb-5 mt-4">
 			   <h1>Login</h1>
-	<form>
-	 <!-- these two span tags display the user feedback success or error on registering -->
-      <span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span>
-      <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span><br /><br />
-  <div class="form-group">
+	<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+  <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
     <label for="exampleInputEmail1">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required value="<?php if($error) echo $username; ?>">
-     <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span>
+    <input type="email" name="email" class="form-control" value="<?php echo $username; ?>">
+	 <span class="help-block"><?php echo $email_err; ?></span>
   </div>
-  <div class="form-group">
+  <div class="form-group" <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1"required value="<?php if($error) echo $password; ?>">
-    <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
+    <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+	 <span class="help-block"><?php echo $password_err; ?></span>
+
   </div>
 		<small>Har du ikke en bruger kan du registrere dig <a href="tilmeld.php">her</a></small><br><br>
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" value="Login" class="btn btn-primary">Login</button>
 </form>
 	</div>
 	</div>
