@@ -30,7 +30,7 @@
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
 	<!--Kilde: https://www.dfi.dk/viden-om-film/filmdatabasen/film/captain-america-first-avenger-->
 		<h1>CAPTAIN AMERICA: THE FIRST AVENGER</h1>
-<p>Joe Johnston, USA, 2011 124 min.U/Spillefilm</p>
+<p><b>Joe Johnston, USA, 2011 124 min.U/Spillefilm</b></p>
 
 <p>Hans mod og hans vilje kan der ikke være nogen tvivl om, men den spinkle Steve Rogers bliver kasseret, da han melder sig frivilligt til hæren i 1941. Snart finder militæret imidlertid andet at bruge ham til. Den geniale Dr. Erskine er undsluppet fra nazisterne, og han har udviklet et eksperimentalt serum, der kan styrke et mands naturlige anlæg og forvandle ham til en supersoldat. Således forvandles Rogers til Captain America. Men inden Erskine undslap, var han blevet tvunget til at foretage et lignende eksperiment i Tyskland, på en langt mindre sympatisk kandidat.</p>
 			
@@ -38,75 +38,57 @@
 	<img class="img-fluid mb-2" src="img/ca.png" alt="ca">
 
 		<h2>Grundoplysninger</h2> 
-<p>Original titel: Captain America: The First Avenger</p>
+<p><b>Original titel:</b> Captain America: The First Avenger</p>
 
-<p>Dansk titel: Captain America: The First Avenger</p>
+<p><b>Dansk titel:</b> Captain America: The First Avenger</p>
 
-<p>Instruktør: Joe Johnston</p>
+<p><b>Manuskript:</b> Christopher Markus, Stephen McFeely</p>
 
-<p>Manuskript: Christopher Markus, Stephen McFeely</p>
+<p><b>Scenograf:</b> Rick Heinrichs</p>
 
-<p>Producer: Kevin Feige, Amir Madani</p>
+<p><b>Produktionsland:</b> USA</p>
 
-<p>Fotograf: Shelly Johnson</p>
+<p><b>Dansk biografpremiere:</b> 11.08.2011</p>
 
-<p>Klipper: Robert Dalva, Jeffrey Ford</p>
-
-<p>Komponist: Alan Menken, Alan Silvestri</p>
-
-<p>Scenograf: Rick Heinrichs</p>
-
-<p>Medvirkende: Chris Evans, Hayley Atwell, Sebastian Stan</p>
-
-<p>Produktionsland: USA</p>
-
-<p>Produktionsselskab: Marvel Enterprises</p>
-
-<p>Dansk distribution: United International Pictures</p>
-
-<p>Dansk biografpremiere: 11.08.2011</p>
-
-<p>Premierebiografer: Palads, Imperial, Albertslund Biograferne, Gladsaxe Bio, Værløse Bio, BioCity (Tåstrup), Kastrup Bio, Birkerød Bio, Baltoppen Bio 1-2, CinemaxX, Empire, Kinopalæet (Lyngby), Falkoner samt 49 biografer i provinsen, inkl. Færøerne. I både 3D og 35 mm</p>
-
-<p>Aldersgrænse: Tilladt for børn fra 11 år </p>
+<p><b>Aldersgrænse:</b> Tilladt for børn fra 11 år </p>
 
 <!--Kilde: https://www.youtube.com/watch?v=8P-3KCeXpys&ab_channel=JoBloSuperheroes-->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8P-3KCeXpys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		
 		<h2>Credits</h2> 
 <h4>Selskaber</h4>
-<p>Produktionsselskab: Marvel Enterprises</p>
-<p>Dansk distribution: United International Pictures</p>
+<p><b>Produktionsselskab:</b> Marvel Enterprises</p>
+<p><b>Dansk distribution:</b> United International Pictures</p>
 
 
 <h4>Instruktion</h4>
-<p>Instruktion: Joe Johnston</p>
+<p><b>Instruktion:</b> Joe Johnston</p>
 
 <h4>Manus</h4>
-<p>Manus: Christopher Markus og Stephen McFeely</p>
+<p><b>Manus:</b> Christopher Markus og Stephen McFeely</p>
 
 <h4>Produktion</h4>
-<p>Producer: Kevin Feige og Amir Madani</p>
+<p><b>Producer:</b> Kevin Feige og Amir Madani</p>
 
 <h4>Foto</h4>
-<p>Foto: Shelly Johnson</p>
+<p><b>Foto:</b> Shelly Johnson</p>
 
 <h4>Stills</h4>
-<p>Stills: Jay Maidment</p>
+<p><b>Stills:</b> Jay Maidment</p>
 
 <h4>Klip</h4>
-<p>Klip: Robert Dalva og Jeffrey Ford</p>
+<p><b>Klip:</b> Robert Dalva og Jeffrey Ford</p>
 
 <h4>Musik</h4>
-<p>Musik: Alan Menken og Alan Silvestri</p>
+<p><b>Musik:</b> Alan Menken og Alan Silvestri</p>
 
 <h4>Produktionsdesign</h4>
-<p>Produktionsdesign: Rick Heinrichs</p>
+<p><b>Produktionsdesign:</b> Rick Heinrichs</p>
 
 <h4>Medvirkende</h4>
-<p>Captain America/Steve Rogers: Chris Evans</p>
-<p>Peggy Carter: Hayley Atwell</p>
-<p>James Buchanan 'Bucky' Barnes: Sebastian Stan</p>	
+<p><b>Captain America/Steve Rogers:</b> Chris Evans</p>
+<p><b>Peggy Carter:</b> Hayley Atwell</p>
+<p><b>James Buchanan 'Bucky' Barnes:</b> Sebastian Stan</p>	
 			
 <p>Kilde: Det Danske Filminstitut </p> 			
 			</div>
@@ -127,7 +109,7 @@
 		<a class="mr-3"><i class="fab fa-instagram"></i></a>
 		  </div>
 		  </div>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Hej mit navn er Daniel Nielsen. Jeg er 29 år og har altid interesseret mig for film. Især Marvels univers synes jeg er spændende. Jeg kan godt lide at finde flere informationer om filmene end bare at se en trailer. Jeg har læst medievidenskab og dermed fået muligheden for at bruge min hobby som levevej.</p>
   </div>
 </div>
 	</div>

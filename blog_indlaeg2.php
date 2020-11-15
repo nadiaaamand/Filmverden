@@ -30,8 +30,8 @@
 		<div class="col-sm-12 col-lg-6 offset-lg-3">
 	<!--Kilde: https://www.dfi.dk/viden-om-film/filmdatabasen/film/harry-potter-og-fonixordenen-->
 		<h1>HARRY POTTER OG FØNIXORDENEN</h1>
-<p>David Yates, Storbritanien, 2007 
-139 min.U/SpillefilmBørnefilm</p>
+<p><b>David Yates, Storbritanien, 2007 
+139 min.U/SpillefilmBørnefilm</b></p>
 
 <p>Allerede før semesterstart på Hogwarts, skolen for heksekunster og troldmandsskab, har Harry kæmpet mod Dementorer i Little Whinging. Da Harry har brugt magi foran en muggler, bliver han indkaldt til en høring i Ministeriet for Magi, der truer med at bortvise Harry fra skolen. Heldigvis hjælper Dumbledore Harry, og han får lov til at starte på skolen til det femte semester. Tilbage på skolen opdager Harry, at det ikke er alle, der tror på, at han kæmpede mod den onde Lord Voldemort; og da slet ikke, at Voldemort er tilbage.</p>
 			
@@ -39,73 +39,50 @@
 	<img class="img-fluid mb-2" src="img/harrypotter.jpg" alt="harrypotter">
 
 		<h2>Grundoplysninger</h2> 
-<p>Original titel: Harry Potter and the Order of the Phoenix</p>
+<p><b>Original titel:</b> Harry Potter and the Order of the Phoenix</p>
 
-<p>Dansk titel: Harry Potter og Fønixordenen</p>
+<p><b>Dansk titel:</b> Harry Potter og Fønixordenen</p>
 
-<p>Instruktør: Harry Potter og Fønixordenen</p>
+<p><b>Produktionsland:</b>	Storbritanien, USA</p>
 
-<p>Manuskript: Michael Goldenberg</p>
+<p><b>Dansk biografpremiere:</b> 13.07.2007</p>
 
-<p>Producer: David Heyman, David Barron</p>
-
-<p>Fotograf: Slawomir Idziak</p>
-
-<p>Klipper: Slawomir Idziak</p>
-
-<p>Komponist: Slawomir Idziak</p>
-
-<p>Scenograf: Stuart Craig</p>
-
-<p>Medvirkende:	Daniel Radcliffe, Rupert Grint, Emma Watson</p>
-
-<p>Produktionsland:	Storbritanien, USA</p>
-
-<p>Produktionsselskab: Heyday Films</p>
-
-<p>Dansk distribution: Sandrew Metronome</p>
-
-<p>Dansk biografpremiere: 13.07.2007</p>
-
-<p>Premierebiografer: Palads, Imperial, Albertslund Biograferne, Gladsaxe Bio, BioCity (Tåstrup), Kastrup Bio, Baltoppen Bio 1-2, Gentofte Kino, Glostrup Bio, CinemaxX, Empire, Kinopalæet (Lyngby), Metropol, Falkoner, Vanløse Bio samt 63 biografer i provinsen, inkl. Færøerne og Grønland</p>
-
-<p>Aldersgrænse: Tilladt for børn fra 11 år </p>
+<p><b>Aldersgrænse:</b> Tilladt for børn fra 11 år </p>
 
 	<!--Kilde: https://www.youtube.com/watch?v=7pc-weXRrPY&ab_channel=harryXoXmeXoXpotter-->
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/7pc-weXRrPY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		
 		<h2>Credits</h2> 
 <h4>Selskaber</h4>
-
-<p>Produktionsselskab: Heyday Films</p>
-<p>Finansiering: A Warner Bros. release of a Heyday Films production</p>
-<p>Dansk distribution: Sandrew Metronome</p>
+<p><b>Produktionsselskab:</b> Heyday Films</p>
+<p><b>Finansiering:</b> A Warner Bros. release of a Heyday Films production</p>
+<p><b>Dansk distribution:</b> Sandrew Metronome</p>
 
 <h4>Instruktion</h4>
-<p>Instruktion: David Yates</p>
+<p><b>Instruktion:</b> David Yates</p>
 
 <h4>Manus</h4>
-<p>Manus: Michael Goldenberg</p>
+<p><b>Manus:</b> Michael Goldenberg</p>
 
 <h4>Produktion</h4>
-<p>Producer: David Heyman og David Barron</p>
+<p><b>Producer:</b> David Heyman og David Barron</p>
 
 <h4>Foto</h4>
-<p>Foto: Slawomir Idziak</p>
+<p><b>Foto:</b> Slawomir Idziak</p>
 
 <h4>Klip</h4>
-<p>Klip: Mark Day</p>
+<p><b>Klip:</b> Mark Day</p>
 
 <h4>Musik</h4>
-<p>Musik: Nicholas Hooper</p>
+<p><b>Musik:</b> Nicholas Hooper</p>
 
 <h4>Produktionsdesign</h4>
-<p>Produktionsdesign: Stuart Craig</p>
+<p><b>Produktionsdesign:</b> Stuart Craig</p>
 
 <h4>Medvirkende</h4>
-<p>Harry Potter: Daniel Radcliffe</p>
-<p>Ron Weasley: Rupert Grint</p>
-<p>Hermione Granger: Emma Watson</p>	
+<p><b>Harry Potter:</b> Daniel Radcliffe</p>
+<p><b>Ron Weasley:</b> Rupert Grint</p>
+<p><b>Hermione Granger:</b> Emma Watson</p>	
 
 <p>Kilde: Det Danske Filminstitut </p> 			
 			</div>
@@ -117,7 +94,7 @@
 	<div class="row">
 	<div class="col-lg-8 offset-2">
 	<div class="media">
-  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="align-self-start mr-3 rounded-circle" alt="..." width="150">
+  <img src="img/marie.jpg" class="align-self-start mr-3 rounded-circle" alt="marie" width="150">
   <div class="media-body">
 	  <div class="justify-content-between d-flex">
     <h5 class="mt-0">Om forfatteren</h5>
@@ -126,7 +103,7 @@
 		<a class="mr-3"><i class="fab fa-instagram"></i></a>
 		  </div>
 		  </div>
-    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Hej mit navn er Marie Jørgensen. Jeg er 32 år. Gift og mor til tvillinger på 3 år. Mit store passion er Harry Potter. Jeg føler, jeg er opvokset med hele universet gennem bøger og film. Jeg er uddannet journalist og har i flere år brugt min tid på at gå i dybden med Harry Potter universet.</p>
   </div>
 </div>
 	</div>
