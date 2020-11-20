@@ -1,12 +1,14 @@
 <?php
-
+session_start();
 require_once 'db-con.php';
 
+$iduser = $_SESSION['id'];
 $email = $_POST['email']; //Connecting the form data with the update function
+//$iduser = $_POST['iduser'];
 
-$sql = "UPDATE user SET email=? WHERE iduser=1";
+$sql = "UPDATE user SET email=? WHERE iduser=?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('s', $email);
+$stmt->bind_param('si', $email, $iduser);
 $stmt->execute();
 
 if ($stmt->affected_rows >0 ){

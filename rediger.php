@@ -4,6 +4,8 @@ require_once 'db-con.php';
 ?>
 <?php //Password ændres her
 
+$id = $_SESSION['iduser'];
+
 $password = $_POST['pwd']; //Connecting the form data with the update function
 
 // Processing form data when form is submitted
@@ -25,10 +27,11 @@ $lowercase = preg_match('@[a-z]@', $password);
 
     // Check input errors before inserting in database
  if (empty($password_err)){
-$sql = "UPDATE user SET pwd=? WHERE iduser=1";
+$sql = "UPDATE user SET pwd=? WHERE iduser=?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('s', $param_password);
+$stmt->bind_param('si', $param_password, $param_id);
 $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+$param_email = $id;
 $stmt->execute();
 
 if ($stmt->affected_rows >0 ){
@@ -84,10 +87,10 @@ else {
 	
 	<!--IMAGE FETCHING and UPDATING-->
 		       <?php
-			
-			$sql = "SELECT IMG FROM user WHERE iduser=?";
+			$iduser = $_SESSION['id'];
+			$sql = "SELECT img FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			$stmt->bind_param('i', $bid);
+			$stmt->bind_param('i', $iduser);
 			$stmt->execute();
 			$stmt->bind_result($img);
 			while ($stmt->fetch()){
@@ -95,40 +98,36 @@ else {
 				echo '<form method="post" action="update-image.php" enctype="multipart/form-data">';
 				echo '<div class="form-group text-center">';
 				echo '<img class="rounded-circle mt-1 " src="'.$img.'" width="150">';
-				echo '<input type="hidden" name="iduser" value="'.$iduser.'">';
 				echo '<input type="file" class="form-control-file center" name="fileToUpload">';
 				echo '<button type="submit" class="btn btn-primary btn-sm mt-2 mb-4">Opdater</button>';
 				echo '</div>';
 				echo '</form>';
 					}
-				?>
 	
 	
-	<!--NAME FETCHING and UPDATING-->
-	       <?php
+	//NAME FETCHING and UPDATING
 			
 			$sql = "SELECT name FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			$stmt->bind_param('i', $bid);
+			$stmt->bind_param('i', $iduser);
 			$stmt->execute();
 			$stmt->bind_result($name);
 			while ($stmt->fetch()){
 				echo '<form method="post" action="update-name.php">';
 				echo '<div class="form-group">';
-				echo '<input type="hidden" name="iduser" value="'.$iduser.'">';
+				echo '<input type="hidden" name="iduser" value="'.$iduser.'">'; //Tjek om denne har værdi
 				echo '<input type="name" name="name" class="form-control" value="'.$name.'">';
 				echo '<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>';
 				echo '</div>';
 				echo '</form>';
-					}
-				?>
+			}
 	
-	<!--EMAIL FETCHING and UPDATING-->
-		       <?php
+	//EMAIL FETCHING and UPDATING
+		
 			
 			$sql = "SELECT email FROM user WHERE iduser=?";
 			$stmt = $conn->prepare($sql);
-			$stmt->bind_param('i', $bid);
+			$stmt->bind_param('i', $iduser);
 			$stmt->execute();
 			$stmt->bind_result($email);
 			while ($stmt->fetch()){

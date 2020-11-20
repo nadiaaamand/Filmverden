@@ -62,16 +62,17 @@ $lowercase = preg_match('@[a-z]@', $password);
     if (empty($name_err) && empty($email_err) && empty($password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO user (name, email, pwd) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO user (name, email, pwd, img) VALUES (?, ?, ?, ?)";
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sss", $param_name, $param_email, $param_password);
+            mysqli_stmt_bind_param($stmt, "ssss", $param_name, $param_email, $param_password, $param_img);
 
             // Set parameters
 			$param_name = $name;
             $param_email = $email;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+			$param_img = "img/default-img.png";
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
