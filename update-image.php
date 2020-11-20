@@ -2,7 +2,7 @@
 session_start();
 require_once 'db-con.php';
 
-$id = $_SESSION['iduser'];
+$userid = $_SESSION['id'];
 
 $target_file = $_POST['img'];
 
@@ -26,7 +26,7 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param('si', $param_img, $param_id);
  // Set parameters
 $param_img = $target_file;
-$param_id =$id;
+$param_id = $userid;
 $stmt->execute();
 
 

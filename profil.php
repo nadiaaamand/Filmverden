@@ -1,11 +1,12 @@
 <?php
 // Include database config file
 require_once 'db-con.php';
- 
+ //$iduser = $_SESSION['id'];
+$_SESSION['id'] = $iduser;
 //// If session variable is not set it will redirect to login page
-if(!isset($_SESSION['id']) || empty($_SESSION['id'])){
-header("location: login.php");
-exit;}
+//if(!isset($_SESSION['id']) || empty($_SESSION['id'])){
+//header("location: login.php");
+//exit;}
 
 ?>
 <!doctype html>
@@ -40,7 +41,7 @@ exit;}
 				
 	<?php 	
 			//Retrieve name from database
-			$iduser = $_SESSION['id'];
+			//$iduser = $_SESSION['id'];
 			$sql = 'SELECT name FROM user WHERE iduser=?';
 			$stmt = $conn->prepare($sql);
 			$stmt->bind_param('i', $iduser);

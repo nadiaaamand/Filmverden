@@ -1,7 +1,6 @@
 <?php
 // Include config file
 require_once 'db-con.php';
-session_start();
 			   
 
 // Define variables and initialize with empty values
