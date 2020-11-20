@@ -81,8 +81,8 @@
 		<div class="container">
             <div class="row">
                 <div class="col-md-12 mb-4">
+					<h2 class="text-center mb-4 mt-2">Kommende film</h2>
                     <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
                         <ol class="blog carousel-indicators">
                             <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#blogCarousel" data-slide-to="1"></li>

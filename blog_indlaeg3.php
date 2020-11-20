@@ -56,30 +56,30 @@
 <p><b>DFI-støtteform:</b> Markedsordningen </p>
 
 <p><b>Aldersgrænse:</b> Tilladt for børn fra 15 år</p>
-
+<div class="embed-responsive embed-responsive-16by9">
 	<!--Kilde: https://www.youtube.com/watch?v=Wk87XFfLGXE&ab_channel=NordiskFilm-->
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/Wk87XFfLGXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wk87XFfLGXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 		
-		<h2>Credits</h2> 
-<h4>Selskaber</h4>
+		<h2 class="my-2">Credits</h2> 
+<h3>Selskaber</h3>
 <p><b>Produktionsselskab:</b>	Zentropa Entertainments20</p>
 <p><b>Dansk distribution:</b>	Nordisk Film Biografdistribution
 </p>
 
-<h4>Instruktion </h4>
+<h3>Instruktion </h3>
 <p><b>instruktion:</b>	Mikkel Nørgaard</p>
 <p><b>Casting:</b>	Rie Hedegaard og Anja Philip</p>
 <p><b>Scripter:</b> Annika Appelin</p>
 
 
 
-<h4>Manus </h4>
+<h3>Manus </h3>
 <p><b>Manuskriptforfatter:</b> Nikolaj Arcel</p>
 <p><b>Storyboard:</b>	Anders Huulgaard</p>
 <p><b>Koncept:</b> Nikolaj Arcelog Mikkel Nørgaard</p>
 
 
-<h4>Produktion </h4> 
+<h3>Produktion </h3> 
 <p><b>Producer:</b>	Louise Vesth og Peter Aalbæk Jensen</p>
 <p><b>Produktionsleder:</b>	Lene Nielsen og	Nanna Nikali</p>
 <p><b>Location manager:</b>	Jacob-Ole Remming</p>
@@ -87,31 +87,31 @@
 <p><b>Udviklingsproducer:</b>	Carsten Sparwath</p>
 
 
-<h4>Foto</h4>
+<h3>Foto</h3>
 <p><b>Fotograf:</b>	Eric Kress</p>
 <p><b>Low loader:</b>	Philip Christensen</p>
 <p><b>Fotograf, TV-indslag:</b>	Claus Petersen</p>
 
 
-<h4> Lys </h4> 
+<h3> Lys </h3> 
 <p><b>Belysningsmester:</b> Per Danbo</p>
 <p><b>Belyser:</b> Thomas Larsen, Claus Preis, Hans Koetter og Patrick Fuchs</p>
 <p><b>Prelight studie:</b> Morten Kildegaard, Kasper Mønster, Jonathan Go-Matsushima, Jens Lund og David Medina</p>
 
 
-<h4>Klip </h4>
+<h3>Klip </h3>
 <p><b>Klipper:</b> Morten Egholm og Martin Schade</p>
 <p><b>Klippekonsulent:</b> Janus Billeskov Jansen</p>
 
 
-<h4>Musik </h4>
+<h3>Musik </h3>
 <p><b>Komponist:</b> Johan Söderqvist, Patrik Andrén, Uno Helmersson</p>
 <p><b>Orkestrering:</b> Karsten Fundal</p>
 <p><b>Koncertmester:</b> Stefan Pintev</p>
 <p><b>Indspilningstekniker:</b> Manfred Faust</p>
 
 
-<h4>Produktionsdesign</h4>
+<h3>Produktionsdesign</h3>
 <p><b>Produktionsdesigner:</b> Rasmus Thjellesen</p>
 <p><b>Art director:</b> Søren Schwarzberg</p>
 <p><b>Lead scenic artist:</b>	Matthew McLemore</p>
@@ -120,22 +120,20 @@
 <p><b>Rekvisitør:</b>	Tine Hieronymus Nielsen, Anna Stuckmann, Lars Brockmann og Claudia Schröder</p>
 
 
-<h4>Kostumer </h4> 
+<h3>Kostumer </h3> 
 <p><b>Chefkostumier:</b> Stine Thaning</p>
 <p><b>Kostumeassistent:</b> Vibe Knoblauch Hededam</p>
 
-<h4>Makeup </h4> 
+<h3>Makeup </h3> 
 <p><b>Chefsminkør:</b>	Tina Helmark</p>
 <p><b>Sminkør:</b> Sofie de Mylius</p>
-
-<h4>Lyd </h4> 
 <p> <b>Tonemester:</b>	Hans Møller</p>
 <p><b>Lydoptagelser:</b> Rasmus Damsgaard</p>
 <p><b>Lyddesigner:</b>	Hans Møller</p>
 <p><b>FX-klipper:</b> Morten Dalsgaard</p>
 
 
-<h4>Medvirkende </h4> 
+<h3>Medvirkende </h3> 
  <p><b>Carl Mørck:</b> Nikolaj Lie Kaas</p>
 <p><b>Assad:</b> Fares Fares</p>
 <p><b>Merete Lynggaard:</b> Sonja Richter</p>
@@ -147,9 +145,9 @@
 </div>
 	
 	<!-- Media object -> Om forfatteren-->		
-<div class="container border-top border-light p-4 m-4">
+<div class="container border-top border-light p-lg-4 m-lg-4 px-sm-0 mx-sm-0 py-sm-4 my-sm-4">
 	<div class="row">
-	<div class="col-lg-8 offset-2">
+	<div class="col-lg-8 col-md-12 offset-lg-2 offset-md-0">
 	<div class="media">
   <img src="img/simone.jpg" class="align-self-start mr-3 rounded-circle" alt="simone" width="150">
   <div class="media-body">
@@ -160,7 +158,7 @@
 		<a class="mr-3"><i class="fab fa-instagram"></i></a>
 		  </div>
 		  </div>
-    <p>Hej jeg hedder Simone Hjalmer. Jeg er 25 år og bor sammen med min kæreste. Jeg læser psykologi. Min helt store hobby er krimiuniverset. Jeg har en klar favorit nemlig Jussi Adler Olsen. Derfor har jeg dykket ned i filmatiseringen af hans første roman.</p>
+    <p>Hej jeg hedder Simone Hjalmer. Jeg er 25 år og bor sammen med min kæreste. Jeg læser psykologi. Min helt store hobby er krimiuniverset. Jeg har en klar favorit, nemlig Jussi Adler Olsen. Derfor har jeg dykket ned i filmatiseringen af hans første roman.</p>
   </div>
 </div>
 	</div>

@@ -35,7 +35,7 @@
 <p>Hans mod og hans vilje kan der ikke være nogen tvivl om, men den spinkle Steve Rogers bliver kasseret, da han melder sig frivilligt til hæren i 1941. Snart finder militæret imidlertid andet at bruge ham til. Den geniale Dr. Erskine er undsluppet fra nazisterne, og han har udviklet et eksperimentalt serum, der kan styrke et mands naturlige anlæg og forvandle ham til en supersoldat. Således forvandles Rogers til Captain America. Men inden Erskine undslap, var han blevet tvunget til at foretage et lignende eksperiment i Tyskland, på en langt mindre sympatisk kandidat.</p>
 			
 	<!--Kilde: pixabay-->
-	<img class="img-fluid mb-2" src="img/ca.png" alt="ca">
+	<img class="img-fluid mb-2" src="img/ca1.jpg" alt="ca">
 
 		<h2>Grundoplysninger</h2> 
 <p><b>Original titel:</b> Captain America: The First Avenger</p>
@@ -52,40 +52,41 @@
 
 <p><b>Aldersgrænse:</b> Tilladt for børn fra 11 år </p>
 
+<div class="embed-responsive embed-responsive-16by9">
 <!--Kilde: https://www.youtube.com/watch?v=8P-3KCeXpys&ab_channel=JoBloSuperheroes-->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8P-3KCeXpys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<h2>Credits</h2> 
-<h4>Selskaber</h4>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8P-3KCeXpys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			
+		<h2 class="my-2">Credits</h2> 
+<h3>Selskaber</h3>
 <p><b>Produktionsselskab:</b> Marvel Enterprises</p>
 <p><b>Dansk distribution:</b> United International Pictures</p>
 
 
-<h4>Instruktion</h4>
+<h3>Instruktion</h3>
 <p><b>Instruktion:</b> Joe Johnston</p>
 
-<h4>Manus</h4>
+<h3>Manus</h3>
 <p><b>Manus:</b> Christopher Markus og Stephen McFeely</p>
 
-<h4>Produktion</h4>
+<h3>Produktion</h3>
 <p><b>Producer:</b> Kevin Feige og Amir Madani</p>
 
-<h4>Foto</h4>
+<h3>Foto</h3>
 <p><b>Foto:</b> Shelly Johnson</p>
 
-<h4>Stills</h4>
+<h3>Stills</h3>
 <p><b>Stills:</b> Jay Maidment</p>
 
-<h4>Klip</h4>
+<h3>Klip</h3>
 <p><b>Klip:</b> Robert Dalva og Jeffrey Ford</p>
 
-<h4>Musik</h4>
+<h3>Musik</h3>
 <p><b>Musik:</b> Alan Menken og Alan Silvestri</p>
 
-<h4>Produktionsdesign</h4>
+<h3>Produktionsdesign</h3>
 <p><b>Produktionsdesign:</b> Rick Heinrichs</p>
 
-<h4>Medvirkende</h4>
+<h3>Medvirkende</h3>
 <p><b>Captain America/Steve Rogers:</b> Chris Evans</p>
 <p><b>Peggy Carter:</b> Hayley Atwell</p>
 <p><b>James Buchanan 'Bucky' Barnes:</b> Sebastian Stan</p>	
@@ -96,9 +97,9 @@
 </div>
 	
 	<!-- Media object -> Om forfatteren-->		
-<div class="container border-top border-light p-4 m-4">
+<div class="container border-top border-light p-lg-4 m-lg-4 px-sm-0 mx-sm-0 py-sm-4 my-sm-4">
 	<div class="row">
-	<div class="col-lg-8 offset-2">
+	<div class="col-lg-8 col-md-12 offset-lg-2 offset-md-0">
 	<div class="media">
   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="align-self-start mr-3 rounded-circle" alt="..." width="150">
   <div class="media-body">

@@ -74,36 +74,36 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8P-3KCeXpys" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		
 		<h2>Credits</h2> 
-<h4>Selskaber</h4>
+<h3>Selskaber</h3>
 <p>Produktionsselskab: Marvel Enterprises</p>
 <p>Dansk distribution: United International Pictures</p>
 
 
-<h4>Instruktion</h4>
+<h3>Instruktion</h3>
 <p>Instruktion: Joe Johnston</p>
 
-<h4>Manus</h4>
+<h3>Manus</h3>
 <p>Manus: Christopher Markus og Stephen McFeely</p>
 
-<h4>Produktion</h4>
+<h3>Produktion</h3>
 <p>Producer: Kevin Feige og Amir Madani</p>
 
-<h4>Foto</h4>
+<h3>Foto</h3>
 <p>Foto: Shelly Johnson</p>
 
-<h4>Stills</h4>
+<h3>Stills</h3>
 <p>Stills: Jay Maidment</p>
 
-<h4>Klip</h4>
+<h3>Klip</h3>
 <p>Klip: Robert Dalva og Jeffrey Ford</p>
 
-<h4>Musik</h4>
+<h3>Musik</h3>
 <p>Musik: Alan Menken og Alan Silvestri</p>
 
-<h4>Produktionsdesign</h4>
+<h3>Produktionsdesign</h3>
 <p>Produktionsdesign: Rick Heinrichs</p>
 
-<h4>Medvirkende</h4>
+<h3>Medvirkende</h3>
 <p>Captain America/Steve Rogers: Chris Evans</p>
 <p>Peggy Carter: Hayley Atwell</p>
 <p>James Buchanan 'Bucky' Barnes: Sebastian Stan</p>	
@@ -149,7 +149,7 @@
 				</form>
 			<?php else: ?>
 				<div class="border-light">
-					<h4 class="text-center pb-4"><a href="login.php">Login</a> for at kommentere på indlægget</h4>
+					<h4 class="text-center pb-4"><a href="login.php">Login</a> for at kommentere på indlægget</h3>
 				</div>
 			<?php endif ?>
 			<!-- Display total number of comments on this post  -->
