@@ -30,6 +30,13 @@ body{
 	background-color:$card-color;
 }
 
+/*Media query tilføj padding til knap fra tablet til mobil*/
+@media screen and (max-width: 1024px){
+	.bg-card{
+		padding-bottom: 1em;
+	}
+}
+
 blog .carousel-indicators {
 	left: 0;
 	top: auto;
@@ -43,6 +50,16 @@ blog .carousel-indicators {
   left: 50%;
   transform: translate(-50%, -50%);
 	color: white;}
+
+/*Media query ændre sted på tekst fra større viewport til mindre*/
+@media screen and (max-width: 1124px){
+	.banner-text{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	}
+}
 
 /* The colour of the indicators */
 .blog .carousel-indicators li {
@@ -73,6 +90,14 @@ a:hover{
 	text-decoration: none;
 }
 
+.nav-link:hover{
+	background-color: $hover-color;
+}
+
+.active{
+	background-color: $hover-color;
+}
+
 .btn-primary{
 	background-color: $primary-color;
 	border-color: $primary-color;
@@ -84,8 +109,8 @@ a:hover{
 	transition: 1s;
 }
 
-/*Media query fjern banner fra tablet til mobil*/
-@media screen and (max-width: 768px){
+/*Media query fjern banner fra breakpoint når brug af brugermenu starter til mobil*/
+@media screen and (max-width: 990px){
 	.banner{
 		display: none;
 	}

@@ -39,7 +39,7 @@
 		
 			<!--nyeste indlæg-->
 <div class="container">
-	<h2 class="text-center mb-4">Nyeste indlæg</h2>
+	<h2 class="text-center mb-4 mt-2">Nyeste indlæg</h2>
 	<!--Indlæg 1-->
 <div class="card mb-3 bg-card">			
   <div class="row no-gutters">

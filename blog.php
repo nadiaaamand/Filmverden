@@ -72,7 +72,7 @@
     <div class="col-lg-8">
       <div class="card-body">
         <h5 class="card-title">KVINDEN I BURET</h5>
-        <p class="card-text">I "Kvinden i buret" møder vi for første gang den uortodokse og desillusionerede vicekriminalkommisær Carl Mørck. Han er én af Københavns Politis skarpeste hjerner, men han er samarbejdsvanskelig og er blevet stuvet af vejen i kælderen under Politigården. Her sættes han i spidsen for Afdeling Q, politiets nyoprettede afdeling for "sager under særlig bevågenhed". I virkeligheden skal han og hans nye makker Assad få tiden til at gå med katalogisere en række uopklarede gamle sager...</p>
+        <p class="card-text">I "Kvinden i buret" møder vi for første gang den uortodokse og desillusionerede vicekriminalkommisær Carl Mørck. Han er én af Københavns Politis skarpeste hjerner, men han er samarbejdsvanskelig og er blevet stuvet af vejen i kælderen under Politigården. Her sættes han i spidsen for Afdeling Q, politiets nyoprettede afdeling for "sager under særlig bevågenhed"...</p>
 		  <a href="blog_indlaeg3.php" class="btn btn-primary float-right">Læs mere</a>
       </div>
     </div>

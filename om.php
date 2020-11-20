@@ -16,6 +16,9 @@
 	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
+	<!-- Font awesome icons-->
+	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
@@ -25,7 +28,7 @@
 	<div class="container-fluid">
 	<div class="row">
 		<img class="img-fluid" src="img/film_banner_om.jpg" alt="bannerbillede af filmruller">
-		<div class="col-sm-12 col-lg-6 offset-lg-3">
+		<div class="col-sm-12 col-lg-6 offset-lg-3 mb-3">
 		<h1>Om os</h1>
 <p>Filmverden er en lille blog som sætter fokus på hele produktionen af en film. Som interesserede i filmverden og hvordan film produceres før, under og efter filmning har vi gjort det til vores opgave at lave et forum hvor den information kan blive delt og diskuteret. </p>
 

@@ -111,6 +111,9 @@ $lowercase = preg_match('@[a-z]@', $password);
 	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
+    <!-- Font awesome icons-->
+	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
@@ -137,6 +140,10 @@ $lowercase = preg_match('@[a-z]@', $password);
     <input type="password" name="pwd" class="form-control" value="<?php echo $password; ?>">
 	  <span class="help-block"><?php echo $password_err; ?></span>
 		</div>
+	 <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label mb-2" for="exampleCheck1">Tilmeld mig nyhedsbrevet</label>
+  </div>
 
 		<small>Har du allerede en konto? <a href="login.php">Login her</a>.</small><br><br>
   <button type="submit" class="btn btn-primary" value="Submit">Tilmeld</button>
