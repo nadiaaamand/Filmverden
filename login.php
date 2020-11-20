@@ -1,6 +1,8 @@
 <?php
 // Include config file
 require_once 'db-con.php';
+session_start();
+			   
 
 // Define variables and initialize with empty values
 $email = $password = "";
@@ -26,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($email_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT email, pwd FROM user WHERE email = ?";
+        $sql = "SELECT iduser, email, pwd FROM user WHERE email = ?";
         
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -34,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // Set parameters
             $param_email = $email;
-            
+
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Store result
@@ -48,9 +50,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     if(mysqli_stmt_fetch($stmt)){
                         if(password_verify($password, $hashed_password)){
                             /* Password is correct, so start a new session and
-                            save the username to the session */
+                            save the email to the session */
                             session_start();
-                            $_SESSION['email'] = $email;      
+                            $_SESSION['id'] = $row['iduser'];      
                             header("location: profil.php");
                         } else{
                             // Display an error message if password is not valid
@@ -106,7 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
     <label for="exampleInputEmail1">Email</label>
-    <input type="email" name="email" class="form-control" value="<?php echo $username; ?>">
+    <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
 	 <span class="help-block"><?php echo $email_err; ?></span>
   </div>
   <div class="form-group" <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>

@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 $curpage = basename ($_SERVER['PHP_SELF']);
 //Using this cause you can't use a class directly since the class is on all pages - instead I have used an if statement --> if the current page is e.g. contact.php the class will be shown as active. The $_server is a super global variable which holds information about header, locations.
 ?>
@@ -19,7 +19,7 @@ $curpage = basename ($_SERVER['PHP_SELF']);
 						if($curpage == "profil.php") {
 						   echo ' class=" active"';
 				        } 
-					  echo '<a>Profil</a>';
+					  echo 'Profil</a>';
 				 }?>
       <a class="nav-link <?= ($curpage == 'login.php') ? 'active':''; ?>" href="login.php">Login</a>
     </div>
