@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $email_err = "Skriv venligst en mail.";
     } else{
         // Prepare a select statement
-        $sql = "SELECT iduser FROM user WHERE email = ?";
+        $sql = "SELECT email FROM user WHERE email = ?";
         
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters

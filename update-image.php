@@ -2,7 +2,7 @@
 session_start();
 require_once 'db-con.php';
 
-$userid = $_SESSION['id'];
+$email = $_SESSION['email'];
 
 $target_file = $_POST['img'];
 
@@ -21,12 +21,12 @@ $uploadOk = false;
 
 }
 if($uploadOk){ 
-$sql = "UPDATE user SET img=? WHERE iduser=?"; //Her ændres bruger til når sessionen kommer på
+$sql = "UPDATE user SET img=? WHERE email=?"; //Her ændres bruger til når sessionen kommer på
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('si', $param_img, $param_id);
+$stmt->bind_param('ss', $param_img, $param_email);
  // Set parameters
 $param_img = $target_file;
-$param_id = $userid;
+$param_email = $email;
 $stmt->execute();
 
 

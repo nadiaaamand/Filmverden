@@ -1,10 +1,9 @@
 <?php
 // Include database config file
 require_once 'db-con.php';
- //$iduser = $_SESSION['id'];
-$_SESSION['id'] = $iduser;
+
 //// If session variable is not set it will redirect to login page
-//if(!isset($_SESSION['id']) || empty($_SESSION['id'])){
+//if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
 //header("location: login.php");
 //exit;}
 
@@ -44,10 +43,10 @@ $_SESSION['id'] = $iduser;
 				
 	<?php 	
 			//Retrieve name from database
-			//$iduser = $_SESSION['id'];
-			$sql = 'SELECT name FROM user WHERE userid=?';
+			$email = $_SESSION['email'];
+			$sql = "SELECT name FROM user WHERE email= ?";
 			$stmt = $conn->prepare($sql);
-			$stmt->bind_param('i', $iduser);
+			$stmt->bind_param('s', $email);
 			$stmt->execute();
 			$stmt->bind_result($name);
 			while ($stmt->fetch()){
@@ -59,9 +58,9 @@ $_SESSION['id'] = $iduser;
 			
 				<?php
 			//Retrieve name and email from database
-			$sql = "SELECT img, name, email FROM user WHERE iduser=?";
+			$sql = "SELECT img, name, email FROM user WHERE email=?";
 			$stmt = $conn->prepare($sql);
-			$stmt->bind_param('i', $id);
+			$stmt->bind_param('s', $email);
 			$stmt->execute();
 			$stmt->bind_result($img, $name, $email);
 			while ($stmt->fetch()){
@@ -76,7 +75,7 @@ $_SESSION['id'] = $iduser;
 			<div class="col-sm-12 col-lg-3 offset-lg-1">
 			<!--Logout-->
 				<?php
-			if (isset($_SESSION["iduser"])){
+			if (isset($_SESSION["email"])){
 				echo '<form class="pt-5" action="logud.php">
 						<button class="btn btn-primary">Log ud</button>
 						<p>Husk at logge ud når du er færdig!</p>
