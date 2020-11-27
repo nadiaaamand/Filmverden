@@ -4,7 +4,7 @@ require_once 'db-con.php';
 ?>
 <?php //Password ændres her
 
-$email = $_SESSION['email'];
+$_SESSION['email'] = $email;
 
 $password = $_POST['pwd']; //Connecting the form data with the update function
 
@@ -27,11 +27,11 @@ $lowercase = preg_match('@[a-z]@', $password);
 
     // Check input errors before inserting in database
  if (empty($password_err)){
-$sql = "UPDATE user SET pwd=? WHERE email='$email'";
+$sql = "UPDATE user SET pwd=? WHERE email=?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param('s', $param_password);
+$stmt->bind_param('ss', $param_password, $param_email);
 $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-//$param_email = $email;
+$param_email = $email;
 $stmt->execute();
 
 if ($stmt->affected_rows >0 ){
@@ -136,6 +136,7 @@ else {
 		<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>
 		</div>
 	</form>
+	
 </div>
 				
 			</div>

@@ -109,13 +109,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		   <div class="col-lg-6 offset-lg-3 col-sm-12 mb-5 mt-4">
 			   <h1>Login</h1>
 			   <?php
-			   //// Tell usier it is already logged in
-//Calling for the user id - if you are logged in you will see the id, if not you will get the else message
-	//if (isset($_SESSION['email'])) {
-		//echo '<p><strong>';
-		//echo "Du er allerede logget ind!";
-		//echo '</strong></p>';
-		//	} 
+			   //// Tell user it is already logged in
+//Calling for the session id - if you are logged in you will see the id, if not you will get the else message
+	if (isset($_SESSION['email'])) {
+		echo '<p><strong>';
+		echo "Du er allerede logget ind!";
+		echo '</strong></p>';
+			} 
 			   ?>
 	<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>

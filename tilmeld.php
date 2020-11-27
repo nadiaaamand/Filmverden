@@ -124,6 +124,15 @@ $lowercase = preg_match('@[a-z]@', $password);
 		<div class="row">
 		   <div class="col-lg-6 offset-lg-3 col-sm-12 mb-5 mt-4">
 			   <h1>Tilmeld</h1>
+			   		   <?php
+			   //// Tell user it is already logged in
+//Calling for the session id - if you are logged in you will see the id, if not you will get the else message
+	if (isset($_SESSION['email'])) {
+		echo '<p><strong>';
+		echo "Du er allerede logget ind!";
+		echo '</strong></p>';
+			} 
+			   ?>
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
     <label for="navn">Navn</label>
@@ -141,7 +150,7 @@ $lowercase = preg_match('@[a-z]@', $password);
 	  <span class="help-block"><?php echo $password_err; ?></span>
 		</div>
 	 <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input" name="" value="ja">
     <label class="form-check-label mb-2" for="exampleCheck1">Tilmeld mig nyhedsbrevet</label>
   </div>
 

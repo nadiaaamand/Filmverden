@@ -109,6 +109,11 @@ a:hover{
 	transition: 1s;
 }
 
+.btn-primary.focus, .btn-primary:focus {
+	background-color: $hover-color;
+	border-color: $hover-color;
+}
+
 /*Media query fjern banner fra breakpoint når brug af brugermenu starter til mobil*/
 @media screen and (max-width: 990px){
 	.banner{

@@ -2,11 +2,6 @@
 // Include database config file
 require_once 'db-con.php';
 
-//// If session variable is not set it will redirect to login page
-//if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
-//header("location: login.php");
-//exit;}
-
 ?>
 <!doctype html>
 <html lang="da">
@@ -42,6 +37,12 @@ require_once 'db-con.php';
 			<h1>Profil</h1>
 				
 	<?php 	
+			//// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
+header("location: login.php");
+}else {	
+				
+			
 			//Retrieve name from database
 			$email = $_SESSION['email'];
 			$sql = "SELECT name FROM user WHERE email= ?";
@@ -80,7 +81,7 @@ require_once 'db-con.php';
 						<button class="btn btn-primary">Log ud</button>
 						<p>Husk at logge ud når du er færdig!</p>
 						</form>';
-			} 
+			} }
 			
 			?>
 			</div>

@@ -14,13 +14,9 @@ $curpage = basename ($_SERVER['PHP_SELF']);
       <a class="nav-link <?= ($curpage == 'om.php') ? 'active':''; ?>" href="om.php">Om</a>
       <a class="nav-link <?= ($curpage == 'blog.php') ? 'active':''; ?>" href="blog.php">Blog</a>
 		<?php // Session id bliver her aktiveret så når brugeren er logget ind vil profilsiden blive vist i menuen. Derfor vil siden ikke være aktiv medmindre man er logget ind. 
-					if($_SESSION["id"]) { 
-					  echo '<a class="nav-link" href="profil.php"';
-						if($curpage == "profil.php") {
-						   echo ' class=" active"';
-				        } 
-					  echo 'Profil</a>';
-				 }?>
+					if($_SESSION["email"]) { ?>
+					  <a class="nav-link <?= ($curpage == 'profil.php') ? 'active':''; ?>" href="profil.php">Profil</a>
+				 <?php }?>
       <a class="nav-link <?= ($curpage == 'login.php') ? 'active':''; ?>" href="login.php">Login</a>
     </div>
   </div>
