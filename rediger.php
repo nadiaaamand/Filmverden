@@ -124,6 +124,22 @@ else {
 				echo '</div>';
 				echo '</form>';
 			}
+	
+	//EMAIL FETCHING and UPDATING
+			$sql = "SELECT email, iduser FROM user WHERE email=?";
+			$stmt = $conn->prepare($sql);
+			$stmt->bind_param('si', $email, $iduser);
+			$stmt->execute();
+			$stmt->bind_result($email);
+			while ($stmt->fetch()){
+				echo '<form method="post" action="update-email.php">';
+				echo '<div class="form-group">';
+				echo '<input type="hidden" name="iduser" value="'.$iduser.'">'; //Tjek om denne har værdi
+				echo '<input type="email" name="email" class="form-control" value="'.$email.'">';
+				echo '<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>';
+				echo '</div>';
+				echo '</form>';
+			}
 				?>
 
 	<!--PASSWORD UPDATING-->

@@ -98,17 +98,17 @@
                                             <img src="img/all-my-life.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.movieinsider.com/posters/567070?fbclid=IwAR2_Xqih2gqvMVEK941QuA6vRixmZ0mFN7HmyN_QivtcnCYhiwA3jfZjkj4" target="_blank">
                                             <img src="img/barefoot.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class=" space col-md-3">
                                         <a href="https://www.imdb.com/title/tt2850386/?ref_=nv_sr_srsg_0&fbclid=IwAR3ATFhfis__pbHZY5OtPtBPSvqe3je1UPxt5e-bG4kf0CVo7wpXQIeEDAs" target="_blank">
                                             <img src="img/croods.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class=" space col-md-3">
                                         <a href="https://www.imdb.com/title/tt10515926/?ref_=fn_al_tt_1&fbclid=IwAR12qWxfRei_3ffCtWhc4E5AAmd_kjyVq0varNS4Zr0RYnnCjN1ZONWvIGw" target="_blank">
                                             <img src="img/half-brothers.jpg" alt="Image" style="max-width:100%;">
                                         </a>
@@ -125,17 +125,17 @@
                                             <img src="img/the-father.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.imdb.com/title/tt6475714/?ref_=nv_sr_srsg_0&fbclid=IwAR2_Xqih2gqvMVEK941QuA6vRixmZ0mFN7HmyN_QivtcnCYhiwA3jfZjkj4" target="_blank">
                                             <img src="img/monster-hunter.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.imdb.com/title/tt12592252/?ref_=fn_al_tt_1&fbclid=IwAR24qsqoL8Tk_fPidlX-PetX-swhQ2V9v4mJIAajDZDXI1gXon4zdDfWFg8" target="_blank">
                                             <img src="img/songbird.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.imdb.com/title/tt6218010/?ref_=nv_sr_srsg_0&fbclid=IwAR2JqwuM2idsOt7fA7Yaxwlb8UYP_VH_wyfbvRXF973GAyCjhPvC_XEZm0U" target="_blank">
                					  <img src="img/iron-mask.jpg" alt="Image" style="max-width:100%;">
                                         </a>

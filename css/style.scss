@@ -14,10 +14,12 @@ body{
 	color: #fff !important;
 	margin: .5em;
 	padding: .8em 1.2em !important;
+	border-radius: 5px;
 }
 
 .nav-link:hover{
 	backgrund-color: $hover-color;
+	
 }
 
 .nav-link .active{
@@ -71,6 +73,17 @@ blog .carousel-indicators {
 
 .blog .carousel-indicators .active {
 background: #707070;
+}
+
+.carousel-item.active{
+	background-color: #fffcf2;
+}
+
+@media screen and (max-width: 767px){ /*Media query som give lidt luft i toppen til kommende film rubrikkerne fra deres breakpoint*/
+	.space{
+		margin-top: 1em;
+	}
+	
 }
 
 h1{
