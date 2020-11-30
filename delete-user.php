@@ -1,28 +1,20 @@
 <?php
 require_once 'db-con.php';
-$iduser = $_POST['iduser'];
 
-$sql = "DELETE FROM user WHERE iduser = ?";
+//Code inspired from Amit Andipara --> https://www.youtube.com/watch?v=_KsDpo0uCVs
 
-	$stmt = $conn->prepare($sql);
-	$stmt->bind_param('i', $iduser);
-	$stmt->execute();
+$iduser=  $_GET["iduser"];
 
-if ($conn->query($sql) === TRUE){
-	echo "<script type='text/javascript'>
-	alert('Din bruger er nu slettet.');
-	window.location = 'rediger.php';
-	</script>"; 
-	header('Location: index.php');
-}
-else {
-	echo "<script type='text/javascript'>
-	alert('Ingen ændring - din bruger findes stadig.');
-	window.location = 'rediger.php';
-	</script>"; 
-
-}
-
-
-
+mysqli_query($conn, "DELETE FROM user WHERE iduser = $iduser");
+session_start();
+session_destroy();
 ?>
+	<script type='text/javascript'>
+	alert('Din bruger er nu slettet.');
+	window.location="index.php";
+	</script>; 
+
+
+
+
+

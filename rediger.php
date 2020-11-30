@@ -4,8 +4,8 @@ require_once 'db-con.php';
 ?>
 <?php //Password ændres her
 
-$_SESSION['email'] = $email;
-
+$email = $_SESSION['email'];
+$iduser=  $_POST['iduser'];;
 $password = $_POST['pwd']; //Connecting the form data with the update function
 
 // Processing form data when form is submitted
@@ -25,32 +25,37 @@ $lowercase = preg_match('@[a-z]@', $password);
         $password = trim($_POST['pwd']);
 		}
 
-    // Check input errors before inserting in database
- if (empty($password_err)){
-$sql = "UPDATE user SET pwd=? WHERE email=?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param('ss', $param_password, $param_email);
-$param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-$param_email = $email;
-$stmt->execute();
+  // Check input errors before inserting in database
+    if (empty($password_err)){
+        
+        // Prepare an insert statement
+        $sql = "UPDATE user SET pwd=? WHERE iduser=?";
+        $stmt = $conn->prepare($sql);
+        // Bind variables to the prepared statement as parameters
+        $stmt->bind_param("si", $param_password, $param_iduser);
+
+        // Set parameters
+        $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+		$param_iduser = $iduser;
+        $stmt->execute();
 
 if ($stmt->affected_rows >0 ){
-	echo "<script type='text/javascript'>
+                // Redirect to login page
+              	echo "<script type='text/javascript'>
 	alert('Dit password er blevet ændret');
 	window.location = 'rediger.php';
 	</script>";
-}
-else {
-	echo "<script type='text/javascript'>
-	alert('Der skete en fejl, prøv igen senere.');
+            } else{
+               	echo "<script type='text/javascript'>
+	alert('Beklager, dit password er ikke blevet ændret');
 	window.location = 'rediger.php';
 	</script>";
-}
-	          }
+            }
         }
-         
+	}
         // Close statement
-        mysqli_stmt_close($stmt);?>
+        mysqli_stmt_close($stmt);
+?>
 
 <!doctype html>
 <html lang="da">
@@ -109,6 +114,7 @@ else {
 					}
 	
 	
+	
 	//NAME FETCHING and UPDATING
 			$sql = "SELECT name FROM user WHERE email=?";
 			$stmt = $conn->prepare($sql);
@@ -118,48 +124,62 @@ else {
 			while ($stmt->fetch()){
 				echo '<form method="post" action="update-name.php">';
 				echo '<div class="form-group">';
-				//echo '<input type="hidden" name="iduser" value="'.$iduser.'">'; //Tjek om denne har værdi
 				echo '<input type="name" name="name" class="form-control" value="'.$name.'">';
 				echo '<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>';
 				echo '</div>';
 				echo '</form>';
 			}
 	
-	//EMAIL FETCHING and UPDATING
-			$sql = "SELECT email, iduser FROM user WHERE email=?";
-			$stmt = $conn->prepare($sql);
-			$stmt->bind_param('si', $email, $iduser);
-			$stmt->execute();
-			$stmt->bind_result($email);
-			while ($stmt->fetch()){
-				echo '<form method="post" action="update-email.php">';
-				echo '<div class="form-group">';
-				echo '<input type="hidden" name="iduser" value="'.$iduser.'">'; //Tjek om denne har værdi
-				echo '<input type="email" name="email" class="form-control" value="'.$email.'">';
-				echo '<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>';
-				echo '</div>';
-				echo '</form>';
-			}
-				?>
-
-	<!--PASSWORD UPDATING-->
 	
+	//PASSWORD UPDATING
+			$sql = "SELECT iduser FROM user WHERE email=?";
+			$stmt = $conn->prepare($sql);
+			$stmt->bind_param('s', $email);
+			$stmt->execute();
+			$stmt->bind_result($iduser);
+			while ($stmt->fetch()){ ?>
 		<form method="post" enctype="multipart/form-data"> <!--Password-->
 	<div class="form-group" <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
-		
+		<input type="hidden" name="iduser" value="<?php echo $iduser; ?>">
 		<input type="password" name="pwd" placeholder="Skriv nyt password" class="form-control" value="<?php echo $password; ?>">
 		<span class="help-block"><?php echo $password_err; ?></span>
 		<button type="submit" class="btn btn-primary btn-sm float-right mt-2 mb-4">Opdater</button>
 		</div>
 	</form>
+			<?php 
+			}
 	
+//DELETE USER
+			$sql = "SELECT iduser FROM user WHERE email=?";
+			$stmt = $conn->prepare($sql);
+			$stmt->bind_param('s', $email);
+			$stmt->execute();
+			$stmt->bind_result($iduser);
+			while ($stmt->fetch()){ ?>
+			
+	<form method="post" onsubmit="return confirm(\'Er du sikker på du vil slette dette blogindlæg?\');" action="delete-user.php?iduser=<?php echo $iduser; ?>">
+		<label class="mt-1">Hvis du ikke længere ønsker at være en del af fællesskabet kan du slette din bruger her..</label>
+		<button type="submit" class="btn btn-primary btn-sm float-left mt-1 mb-4">Slet bruger</button>
+		</div>
+	</form>
+			
+			<?php 
+			}
+
+	?>
 </div>
 				
 			</div>
 		</div>
 	</div>
 <?php 
-	require 'footer.php';
-?>
+	require 'footer.php';?>
+	
+<!--Script til onclick funktion-->
+	<script>
+function sletBruger() {
+  confirm("Er du sikker på du vil slette din bruger?");
+}
+</script>
 </body>
 </html>
