@@ -157,7 +157,7 @@ if ($stmt->affected_rows >0 ){
 			$stmt->bind_result($iduser);
 			while ($stmt->fetch()){ ?>
 			
-	<form method="post" onsubmit="return confirm(\'Er du sikker på du vil slette dette blogindlæg?\');" action="delete-user.php?iduser=<?php echo $iduser; ?>">
+	<form method="post" onclick="return confirm('Er du sikker på du vil slette din bruger?');" action="delete-user.php?iduser=<?php echo $iduser; ?>">
 		<label class="mt-1">Hvis du ikke længere ønsker at være en del af fællesskabet kan du slette din bruger her..</label>
 		<button type="submit" class="btn btn-primary btn-sm float-left mt-1 mb-4">Slet bruger</button>
 		</div>
@@ -175,11 +175,6 @@ if ($stmt->affected_rows >0 ){
 <?php 
 	require 'footer.php';?>
 	
-<!--Script til onclick funktion-->
-	<script>
-function sletBruger() {
-  confirm("Er du sikker på du vil slette din bruger?");
-}
 </script>
 </body>
 </html>

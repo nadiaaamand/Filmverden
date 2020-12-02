@@ -6,6 +6,7 @@ require_once 'db-con.php';
 $name = $_POST["name"];
 $email = $_POST["email"];
 $password = $_POST["pwd"];
+$nyhedsbrev = $_POST["nyhedsbrev"]; 
 
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -62,17 +63,18 @@ $lowercase = preg_match('@[a-z]@', $password);
     if (empty($name_err) && empty($email_err) && empty($password_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO user (name, email, pwd, img) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO user (name, email, pwd, img, nyhedsbrev) VALUES (?, ?, ?, ?, ?)";
          
         if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssss", $param_name, $param_email, $param_password, $param_img);
+            mysqli_stmt_bind_param($stmt, "sssss", $param_name, $param_email, $param_password, $param_img, $param_nyhedsbrev);
 
             // Set parameters
 			$param_name = $name;
             $param_email = $email;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
 			$param_img = "img/default-img.png";
+			$param_nyhedsbrev = $nyhedsbrev;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
@@ -133,6 +135,7 @@ $lowercase = preg_match('@[a-z]@', $password);
 		echo '</strong></p>';
 			} 
 			   ?>
+<!--$SERVER PHP_SELF sørger for at error beskeder bliver vist på den nuværende side og htmlschars konvertere scpecielle karaktere til html entities(XSS)-->
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
     <label for="navn">Navn</label>
@@ -150,8 +153,9 @@ $lowercase = preg_match('@[a-z]@', $password);
 	  <span class="help-block"><?php echo $password_err; ?></span>
 		</div>
 	 <div class="form-check">
-    <input type="checkbox" class="form-check-input" name="" value="ja">
-    <label class="form-check-label mb-2" for="exampleCheck1">Tilmeld mig nyhedsbrevet</label>
+	<input type="hidden" class="form-check-input" name="nyhedsbrev" value="nej">
+    <input type="checkbox" class="form-check-input" name="nyhedsbrev" value="ja">
+    <label class="form-check-label mb-2">Bliv en del af fællesskabet! Tilmeld mig nyhedsbrevet</label>
   </div>
 
 		<small>Har du allerede en konto? <a href="login.php">Login her</a>.</small><br><br>
