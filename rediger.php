@@ -68,11 +68,19 @@ if ($stmt->affected_rows >0 ){
 	<!--Stylesheet-->
 	<link rel="stylesheet" href="css/style.css">
 	
+		<!-- Font awesome icons-->
+	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+	
 	</head>
 <body>
 	<?php 
 	include 'nav.php';
-?>
+
+				//// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['email']) || empty($_SESSION['email'])){
+header("location: login.php");
+}else {	?>
+	
 	<div class="container-fluid">
 		<div class="row">	
 			<div class="col-sm-12 col-lg-10 offset-lg-1">
@@ -151,7 +159,7 @@ if ($stmt->affected_rows >0 ){
 	</form>
 			
 			<?php 
-			}
+			}}
 
 	?>
 </div>
@@ -168,8 +176,6 @@ if ($stmt->affected_rows >0 ){
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	
-		<!-- Font awesome icons-->
-	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

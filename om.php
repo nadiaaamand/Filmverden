@@ -9,6 +9,9 @@
 	<!--Stylesheet-->
 	<link rel="stylesheet" href="css/style.css">
 	
+		<!-- Font awesome icons-->
+	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
@@ -40,8 +43,6 @@
 	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
-	<!-- Font awesome icons-->
-	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

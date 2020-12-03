@@ -79,9 +79,14 @@ $lowercase = preg_match('@[a-z]@', $password);
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-               header("location: login.php");
+				echo "<script type='text/javascript'>
+					alert('Du er nu oprettet vores system og kan nu logge ind.');
+					window.location = 'login.php';
+					</script>";
             } else{
-                echo "Beklager, der skete en fejl. Prøv igen senere.";
+                echo "<script type='text/javascript'>
+					alert('Beklager, der skete en fejl. Prøv eventuelt igen senere.');
+					</script>";
             }
         }
          
@@ -105,6 +110,9 @@ $lowercase = preg_match('@[a-z]@', $password);
 	
 	<!--Stylesheet-->
 	<link rel="stylesheet" href="css/style.css">
+	
+	    <!-- Font awesome icons-->
+	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
 	
 </head>
 
@@ -163,8 +171,6 @@ $lowercase = preg_match('@[a-z]@', $password);
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	
-    <!-- Font awesome icons-->
-	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
