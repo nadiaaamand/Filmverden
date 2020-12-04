@@ -10,14 +10,15 @@ body {
   color: #fff !important;
   margin: 0.5em;
   padding: 0.8em 1.2em !important;
+  border-radius: 5px;
 }
 
 .nav-link:hover {
-  backgrund-color: #d4b86c;
+  backgrund-color: #fccd4e;
 }
 
 .nav-link .active {
-  background-color: #d4b86c;
+  background-color: #fccd4e;
 }
 
 /*Navigation styling end*/
@@ -67,6 +68,16 @@ blog .carousel-indicators {
   background: #707070;
 }
 
+.carousel-item.active {
+  background-color: #fffcf2;
+}
+
+@media screen and (max-width: 767px) {
+  /*Media query som give lidt luft i toppen til kommende film rubrikkerne fra deres breakpoint*/
+  .space {
+    margin-top: 1em;
+  }
+}
 h1 {
   margin: 1em 0 0.5em;
 }
@@ -80,16 +91,18 @@ a {
 }
 
 a:hover {
-  color: #d4b86c;
+  color: #fccd4e;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .nav-link:hover {
-  background-color: #d4b86c;
+  background-color: #fccd4e;
+  transition: 0.5s;
 }
 
 .active {
-  background-color: #d4b86c;
+  background-color: #fccd4e;
 }
 
 .btn-primary {
@@ -98,14 +111,14 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #d4b86c;
-  border-color: #d4b86c;
-  transition: 1s;
+  background-color: #fccd4e;
+  border-color: #fccd4e;
+  transition: 0.5s;
 }
 
 .btn-primary.focus, .btn-primary:focus {
-  background-color: #d4b86c;
-  border-color: #d4b86c;
+  background-color: #fccd4e;
+  border-color: #fccd4e;
 }
 
 /*Media query fjern banner fra breakpoint når brug af brugermenu starter til mobil*/
@@ -114,71 +127,6 @@ a:hover {
     display: none;
   }
 }
-/* Comment styling*/
-form button {
-  margin: 5px 0px;
-}
-
-textarea {
-  display: block;
-  margin-bottom: 10px;
-}
-
-/*post*/
-.post {
-  border: 1px solid #ccc;
-  margin-top: 10px;
-}
-
-/*comments*/
-.comment {
-  margin-bottom: 10px;
-}
-
-.comment .comment-name {
-  font-weight: bold;
-}
-
-.comment .comment-date {
-  font-style: italic;
-  font-size: 0.8em;
-}
-
-.comment .reply-btn, .edit-btn {
-  font-size: 0.8em;
-}
-
-.comment-details {
-  width: 91.5%;
-  float: left;
-}
-
-.comment-details p {
-  margin-bottom: 0px;
-}
-
-.comment .profile_pic {
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
-  float: left;
-  border-radius: 50%;
-}
-
-/*replies*/
-.reply {
-  margin-left: 30px;
-}
-
-.reply_form {
-  margin-left: 40px;
-  display: none;
-}
-
-#comment_form {
-  margin-top: 10px;
-}
-
 /*Footer styling*/
 footer {
   color: white;

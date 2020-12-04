@@ -10,14 +10,7 @@
 	<!--Stylesheet-->
 	<link rel="stylesheet" href="css/style.css">
 	
-	<!--Bootstrap JS-->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	
-	<!-- Font awesome icons-->
+		<!-- Font awesome icons-->
 	<script src="https://kit.fontawesome.com/336a1c920c.js" crossorigin="anonymous"></script>
 	
 </head>
@@ -98,17 +91,17 @@
                                             <img src="img/all-my-life.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.movieinsider.com/posters/567070?fbclid=IwAR2_Xqih2gqvMVEK941QuA6vRixmZ0mFN7HmyN_QivtcnCYhiwA3jfZjkj4" target="_blank">
                                             <img src="img/barefoot.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class=" space col-md-3">
                                         <a href="https://www.imdb.com/title/tt2850386/?ref_=nv_sr_srsg_0&fbclid=IwAR3ATFhfis__pbHZY5OtPtBPSvqe3je1UPxt5e-bG4kf0CVo7wpXQIeEDAs" target="_blank">
                                             <img src="img/croods.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class=" space col-md-3">
                                         <a href="https://www.imdb.com/title/tt10515926/?ref_=fn_al_tt_1&fbclid=IwAR12qWxfRei_3ffCtWhc4E5AAmd_kjyVq0varNS4Zr0RYnnCjN1ZONWvIGw" target="_blank">
                                             <img src="img/half-brothers.jpg" alt="Image" style="max-width:100%;">
                                         </a>
@@ -125,17 +118,17 @@
                                             <img src="img/the-father.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.imdb.com/title/tt6475714/?ref_=nv_sr_srsg_0&fbclid=IwAR2_Xqih2gqvMVEK941QuA6vRixmZ0mFN7HmyN_QivtcnCYhiwA3jfZjkj4" target="_blank">
                                             <img src="img/monster-hunter.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.imdb.com/title/tt12592252/?ref_=fn_al_tt_1&fbclid=IwAR24qsqoL8Tk_fPidlX-PetX-swhQ2V9v4mJIAajDZDXI1gXon4zdDfWFg8" target="_blank">
                                             <img src="img/songbird.jpg" alt="Image" style="max-width:100%;">
                                         </a>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="space col-md-3">
                                         <a href="https://www.imdb.com/title/tt6218010/?ref_=nv_sr_srsg_0&fbclid=IwAR2JqwuM2idsOt7fA7Yaxwlb8UYP_VH_wyfbvRXF973GAyCjhPvC_XEZm0U" target="_blank">
                					  <img src="img/iron-mask.jpg" alt="Image" style="max-width:100%;">
                                         </a>
@@ -157,9 +150,12 @@
 <?php 
 		require 'footer.php';
 		?>
-			
-		
-
+	<!--Bootstrap JS-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
 </body>
 </html>
