@@ -105,6 +105,7 @@ $lowercase = preg_match('@[a-z]@', $password);
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 <meta charset="UTF-8">
+<title>Tilmeld</title>
 <!--Bootstrap stylesheet-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	
@@ -136,17 +137,17 @@ $lowercase = preg_match('@[a-z]@', $password);
 <!--$SERVER PHP_SELF sørger for at error beskeder bliver vist på den nuværende side og htmlschars konvertere scpecielle karaktere til html entities(XSS)-->
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
-    <label for="navn">Navn</label>
-    <input type="name" name="name" class="form-control" value="<?php echo $name; ?>">
+    <label>Navn</label>
+    <input type="text" name="name" class="form-control" value="<?php echo $name; ?>">
 	  <span class="help-block"><?php echo $name_err; ?></span>
   </div>
   <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
-    <label for="exampleInputEmail1">Email</label>
+    <label>Email</label>
     <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
 	  <span class="help-block"><?php echo $email_err; ?></span>
   </div>
   <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-    <label for="exampleInputPassword1">Password</label>
+    <label>Password</label>
     <input type="password" name="pwd" class="form-control" value="<?php echo $password; ?>">
 	  <span class="help-block"><?php echo $password_err; ?></span>
 		</div>

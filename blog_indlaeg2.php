@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 <meta charset="UTF-8">
+<title>Harry Potter og Fønixordenen</title>
 <!--Bootstrap stylesheet-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	
@@ -44,7 +45,7 @@
 
 <div class="embed-responsive embed-responsive-16by9">
 	<!--Kilde: https://www.youtube.com/watch?v=7pc-weXRrPY&ab_channel=harryXoXmeXoXpotter-->
-	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7pc-weXRrPY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7pc-weXRrPY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 		
 		<h2 class="my-2">Credits</h2> 
 <h3>Selskaber</h3>
@@ -104,14 +105,9 @@
 	</div>
 	</div>
 			
-	<!--Kommentar-->
 		
 		</div>
-	</div>
-	
-	
-	
-	
+
  <?php 
 	require 'footer.php';
 ?>

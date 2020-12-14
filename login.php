@@ -1,3 +1,4 @@
+<!--LOUISES PHP ELEMENT-->
 <?php
 // Include config file
 require_once 'db-con.php';
@@ -82,6 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 <meta charset="UTF-8">
+<title>Login</title>
 <!--Bootstrap stylesheet-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	
@@ -112,12 +114,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			   ?>
 	<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
   <div class="form-group" <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>>
-    <label for="exampleInputEmail1">Email</label>
-    <input type="email" name="email" class="form-control" value="<?php echo $email; ?>">
+    <label>Email</label>
+    <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
 	 <span class="help-block"><?php echo $email_err; ?></span>
   </div>
   <div class="form-group" <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>>
-    <label for="exampleInputPassword1">Password</label>
+    <label>Password</label>
     <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
 	 <span class="help-block"><?php echo $password_err; ?></span>
 
