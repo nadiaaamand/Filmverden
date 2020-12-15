@@ -111,7 +111,7 @@ header("location: login.php");
 	
 	
 	
-	//NAME FETCHING and UPDATING
+	//NAME FETCHING and UPDATING --> Også Louises php element
 			$sql = "SELECT name FROM user WHERE email=?";
 			$stmt = $conn->prepare($sql);
 			$stmt->bind_param('s', $email);

@@ -1,4 +1,5 @@
 <?php
+//LOUSIES PHP ELEMENT
 session_start();
 require_once 'db-con.php';
 
