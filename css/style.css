@@ -32,6 +32,14 @@ body {
     padding-bottom: 1em;
   }
 }
+/*CSS Safari only lånt herfra: https://www.codegrepper.com/code-examples/css/Safari+only+CSS+hack*/
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .img-fluid {
+      height: 200px !important;
+    }
+  }
+}
 blog .carousel-indicators {
   left: 0;
   top: auto;
