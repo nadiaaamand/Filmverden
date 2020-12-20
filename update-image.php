@@ -4,9 +4,6 @@ require_once 'db-con.php';
 
 $email = $_SESSION['email'];
 
-$target_file = $_POST['img'];
-
-
 //image upload
 $uploadOk = true;
 
@@ -14,12 +11,11 @@ if(!empty($_FILES['fileToUpload']['name'])) {
 $target_dir = "img/"; //specifies the directory where the file is going to be placed
 $target_file = $target_dir . basename($_FILES['fileToUpload']['name']); //specifies the path of the file to be uploaded
 
-$uploadOk = 1;
 move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file); //tmp_name contains the actual copy of your file content on the server
-}else {
-$uploadOk = false;
+	}else {
+		$uploadOk = false;
+	}
 
-}
 if($uploadOk){ 
 $sql = "UPDATE user SET img=? WHERE email=?"; //Her ændres bruger til når sessionen kommer på
 $stmt = $conn->prepare($sql);
@@ -27,8 +23,6 @@ $stmt->bind_param('ss', $param_img, $param_email);
  // Set parameters
 $param_img = $target_file;
 $param_email = $email;
-$stmt->execute();
-
 
   if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
