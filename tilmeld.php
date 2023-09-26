@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } 
 	
 	//defining the check for uppercase and lowercase characters for password vertfication.
-$uppercase = preg_match('@[A-Z]@', $password);
+$uppercase = preg_match('@[A-Z]@', $password); //@ bruges her som delimiter til at definere start og slut af regular expression. Man bruger også ofte skråstreg /
 $lowercase = preg_match('@[a-z]@', $password);
 	
     // Validate password
